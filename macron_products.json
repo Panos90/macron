@@ -1,0 +1,58 @@
+{
+    "Technical Inner Layers & Insulation Systems": {
+      "Advanced Base Layer Systems": [
+        {
+          "name": "Hydrotex Moisture-Control Liners",
+          "description": "Ultra-thin membranes (0.2mm) for coats/outerwear, moving 500ml sweat/hour away from skin"
+        },
+        {
+          "name": "EcoMesh Ventilation Panels",
+          "description": "Laser-cut breathable zones for armpits/back areas in tailored overcoats"
+        }
+      ],
+      "Thermal Regulation Components": [
+        {
+          "name": "HD Bonded Insulation Pads",
+          "description": "Ultra-lightweight (85g/m²) thermal mapping for collar/chest zones"
+        },
+        {
+          "name": "Phase Change Material (PCM) Inserts",
+          "description": "Maintain 31°C microclimate in sleeve cuffs/necklines"
+        }
+      ]
+    },
+    "Structural Enhancement Solutions": {
+      "Performance-Reinforced Fabrics": [
+        {
+          "name": "Performance Jacquard Reinforcement",
+          "description": "23% lighter than standard linings with 4-way stretch for couture silhouettes"
+        },
+        {
+          "name": "Abrasion-Resistant Bonding",
+          "description": "Knee/elbow reinforcement layers surviving 50,000+ rub cycles (ASTM D4966)"
+        }
+      ],
+      "Closure & Fastening Systems": [
+        {
+          "name": "MacronLock Magnetic Closures",
+          "description": "8N hold strength concealed fasteners for seamless outerwear designs"
+        },
+        {
+          "name": "Auto-Tension Drawstrings",
+          "description": "Precision-adjusted hem systems with silicone grip tech from teamwear"
+        }
+      ]
+    },
+    "Sustainable Performance Materials": {
+      "Eco-Engineered Textiles": [
+        {
+          "name": "100% Recycled Performance Jacquard",
+          "description": "Made from 12 PET bottles/m² with carbon footprint 37% lower than virgin polyester"
+        },
+        {
+          "name": "Bio-Based Water Repellents",
+          "description": "C6-free DWR finishes achieving 20,000mm hydrostatic pressure"
+        }
+      ]
+    }
+  } 
