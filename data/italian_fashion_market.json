@@ -1,0 +1,124 @@
+{
+  "1. Core Technical Sportswear": {
+    "definition": "Pure performance – built for sport, minimal design focus",
+    "functionality_score": 1.0,
+    "fashion_score": 0.2,
+    "brands": [
+      "Macron",
+      "Nike",
+      "Adidas",
+      "Puma",
+      "Asics",
+      "Mizuno",
+      "Arena",
+      "Castelli",
+      "La Sportiva",
+      "Alpinestars",
+      "Under Armour"
+    ]
+  },
+  "2. Outdoor Technical Sportswear": {
+    "definition": "Function for real-world conditions, increasingly stylish",
+    "functionality_score": 0.8,
+    "fashion_score": 0.4,
+    "brands": [
+      "Salewa",
+      "Mammut",
+      "Fjällräven",
+      "Columbia",
+      "Patagonia",
+      "The North Face",
+      "Helly Hansen",
+      "Montura",
+      "Karpos",
+      "Goldwin",
+      "Zegna Outdoor"
+    ]
+  },
+  "3. Athleisure": {
+    "definition": "Casual comfort – sport-inspired lifestyle wear",
+    "functionality_score": 0.4,
+    "fashion_score": 0.6,
+    "brands": [
+      "Macron",
+      "Nike",
+      "Adidas",
+      "Puma",
+      "Reebok",
+      "New Balance",
+      "Champion",
+      "Fila",
+      "Kappa",
+      "Ellesse",
+      "Lacoste"
+    ]
+  },
+  "4. Luxury Activewear": {
+    "definition": "Upscale performance wear – fitness-capable, luxury fabrics",
+    "functionality_score": 0.8,
+    "fashion_score": 0.4,
+    "brands": [
+      "Sweaty Betty",
+      "Alo Yoga",
+      "Vuori",
+      "Bogner",
+      "Rossignol",
+      "Peak Performance"
+    ]
+  },
+  "5. Athluxury": {
+    "definition": "Designer-led style – athletic in look, not purpose",
+    "functionality_score": 0.4,
+    "fashion_score": 0.8,
+    "brands": [
+      "Off-White",
+      "Palm Angels",
+      "Y-3",
+      "Philipp Plein",
+      "Marcelo Burlon",
+      "Amiri"
+    ]
+  },
+  "6. High-Performance Luxury": {
+    "definition": "True hybrid – advanced technical gear + refined luxury design",
+    "functionality_score": 0.8,
+    "fashion_score": 0.8,
+    "brands": [
+      "Moncler",
+      "Stone Island",
+      "Lululemon",
+      "Prada Linea Rossa",
+      "Arc'teryx Veilance",
+      "NikeLab ACG",
+      "Moncler Genius",
+      "Goldwin",
+      "Zegna Outdoor",
+      "Acronym",
+      "Ten C",
+      "Snow Peak",
+      "Descente Allterrain"
+    ]
+  },
+  "7. Luxury Fashion": {
+    "definition": "Aesthetic & status – art, heritage, couture over function",
+    "functionality_score": 0.2,
+    "fashion_score": 1.0,
+    "brands": [
+      "Gucci",
+      "Prada",
+      "Versace",
+      "Dolce & Gabbana",
+      "Valentino",
+      "Fendi",
+      "Bottega Veneta",
+      "Giorgio Armani",
+      "Salvatore Ferragamo",
+      "Brunello Cucinelli",
+      "Ermenegildo Zegna",
+      "Saint Laurent",
+      "Chanel",
+      "Dior",
+      "Balenciaga"
+    ]
+  }
+} 
