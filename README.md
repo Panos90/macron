@@ -7,7 +7,7 @@ ModaMesh is a multi-agent simulation system analyzing the Italian fashion market
 ```
 macron/
 ├── cost_estimation.py           # Monte Carlo cost analysis module
-├── brand_intelligence_agent.py  # LangChain agents for brand intelligence
+├── brand_intelligence_agent.py  # Direct API integration for brand intelligence
 ├── italian_fashion_market.py    # Italian fashion market data & utilities
 ├── test/                        # Testing suite
 │   ├── test.py                 # Unified test runner
@@ -17,59 +17,57 @@ macron/
 │   └── test_direct_api.py
 ├── data/                        # Data files
 │   ├── macron_products.json    # Macron product definitions
-│   └── italian_fashion_market.json
-├── product_costs/               # Cost analysis outputs
-└── company_data/                # Brand intelligence outputs
+│   └── italian_fashion_market.csv # Market mapping
+├── product_costs/               # Cost analysis outputs (generated)
+└── company_data/                # Brand intelligence outputs (generated)
 ```
 
-## 📋 Prerequisites
-
-- Python 3.8+
-- Perplexity API key for brand intelligence module
-
-### Environment Setup
-
-For the Brand Intelligence module and tests, you must set the Perplexity API key:
+## 📋 Requirements
 
 ```bash
-export PERPLEXITY_API_KEY='your-api-key-here'
+pip install numpy pandas matplotlib seaborn requests
 ```
 
-## 🧩 Module Overview
+## 🔑 Environment Setup
 
-### 1. Cost Estimation Module (`cost_estimation.py`)
+For Brand Intelligence collection and testing, you MUST set the Perplexity API key:
 
-Performs Monte Carlo simulations to analyze production costs for 10 Macron products across 3 geographical scenarios.
+```bash
+export PERPLEXITY_API_KEY='your-perplexity-api-key'
+```
 
-**Features:**
-- 100,000 Monte Carlo simulations per scenario
-- Statistical distributions for cost components
-- Three production scenarios: EU, Asian, and Hybrid
-- Comprehensive visualizations and reports
+## 🎯 Module 1: Cost Estimation
 
-**Usage:**
+Monte Carlo simulation for analyzing Macron product costs across different production scenarios.
+
+### Features
+- 10 Macron product analysis (Hero, Icon, Evo, etc.)
+- 3 production scenarios (Italy-only, Hybrid, Outsourced)
+- Cost factor distributions with uncertainty modeling
+- Visual analysis with distribution plots
+
+### Usage
 ```bash
 python cost_estimation.py
 ```
 
-**Output:** Results saved to `product_costs/` directory:
-- `analysis_YYYYMMDD_HHMMSS.json` - Full simulation data
-- `executive_summary_YYYYMMDD_HHMMSS.json` - Key insights
-- Visualization plots (PNG files)
+### Output
+- Individual product cost distributions saved to `product_costs/`
+- Comprehensive analysis report in JSON format
+- Visualization screenshots for each product
 
-### 2. Brand Intelligence Module (`brand_intelligence_agent.py`)
+## 🔍 Module 2: Brand Intelligence
 
-Collects comprehensive business intelligence for 67 Italian fashion brands using Perplexity Sonar Pro API.
+Direct Perplexity API integration for gathering comprehensive market intelligence on Italian fashion brands.
 
-**Features:**
-- LangChain-based intelligent agents
-- 15 intelligence categories per brand
-- 80+ metrics collected
-- Robust JSON extraction handling markdown/text artifacts
-- 60-second timeout with 4 retries
-- Individual JSON files per brand
+### Features
+- Automated data collection for 67 Italian fashion brands
+- 15 intelligence categories with 80+ metrics per brand
+- Robust JSON extraction handling
+- Individual company data files
+- Batch processing with rate limiting
 
-**Usage:**
+### Usage
 ```bash
 # Set API key first
 export PERPLEXITY_API_KEY='your-api-key'
@@ -78,84 +76,70 @@ export PERPLEXITY_API_KEY='your-api-key'
 python brand_intelligence_agent.py
 ```
 
-**Output:** Results saved to `company_data/` directory:
-- Individual brand files: `{BrandName}.json`
-- `_collection_summary.json` - Collection statistics
-- `_failed_brands.json` - Any failed collections
+### Output
+- Individual brand JSON files in `company_data/`
+- Collection summary with success statistics
+- Failed brands tracking
 
-### 3. Testing Suite (`test/`)
+## 🧪 Module 3: Testing Suite
 
-Comprehensive test suite for all modules with unified test runner.
+Unified testing framework for all modules.
 
-**Features:**
-- Environment validation
-- Module functionality tests
+### Features
+- Single command to run all tests
+- Environment variable validation
+- Module integrity checks
 - API connectivity tests
-- Colored output for clarity
 
-**Usage:**
+### Usage
 ```bash
+# Set API key for brand intelligence tests
+export PERPLEXITY_API_KEY='your-api-key'
+
 # Run all tests
-python test/test.py
+cd test
+python test.py
 
-# Run individual tests
-python test/test_cost_estimation.py
-python test/test_italian_fashion_market.py
-python test/test_single_brand.py
-python test/test_direct_api.py
+# Or run individual tests
+python test_cost_estimation.py
+python test_italian_fashion_market.py
+python test_single_brand.py
+python test_direct_api.py
 ```
-
-## 🚀 Quick Start
-
-1. **Clone the repository:**
-   ```bash
-   git clone [repository-url]
-   cd macron
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Set up environment (for Brand Intelligence):**
-   ```bash
-   export PERPLEXITY_API_KEY='your-api-key'
-   ```
-
-4. **Run tests to verify setup:**
-   ```bash
-   python test/test.py
-   ```
-
-5. **Run cost analysis:**
-   ```bash
-   python cost_estimation.py
-   ```
-
-6. **Collect brand intelligence:**
-   ```bash
-   python brand_intelligence_agent.py
-   ```
 
 ## 📊 Data Sources
 
-- **Macron Products:** 10 innovative products across 4 categories
-- **Italian Fashion Brands:** 67 brands across 7 market segments
-- **Cost Models:** Statistical distributions based on industry benchmarks
+### Italian Fashion Market Data
+- 67 brands mapped across 7 market segments
+- Functionality vs Fashion positioning (0-10 scale)
+- Segment definitions from luxury to sportswear
 
-## 🔍 Key Insights
+### Macron Product Portfolio
+- 10 key products with technical specifications
+- Target segments and price points
+- Production complexity ratings
 
-The system provides:
-- Production cost optimization strategies
-- Market positioning intelligence
-- Competitive dynamics analysis
+## 🚀 Quick Start
+
+1. Clone the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Set Perplexity API key: `export PERPLEXITY_API_KEY='your-key'`
+4. Run tests: `cd test && python test.py`
+5. Generate cost analysis: `python cost_estimation.py`
+6. Collect brand intelligence: `python brand_intelligence_agent.py`
+
+## 📈 Next Steps
+
+The collected data feeds into the ModaMesh simulation engine for:
+- Market entry strategy analysis
+- Competitive response modeling
 - Partnership opportunity identification
+- Risk assessment across segments
 
 ## 📝 License
 
-[Your License Here]
+TBD
 
 ## 👥 Contributors
 
-[Your Contributors Here] 
+Panagiotis Stratis

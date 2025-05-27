@@ -2,8 +2,8 @@
 """
 BRAND INTELLIGENCE AGENT MODULE
 ==============================
-Phase 3 of ModaMesh: LangChain agents for gathering comprehensive brand intelligence
-using Perplexity Sonar Pro API for deep market research.
+Phase 3 of ModaMesh: Direct Perplexity API integration for gathering comprehensive 
+brand intelligence using Perplexity Sonar Pro API for deep market research.
 
 This module creates one agent per Italian fashion brand and collects detailed
 business intelligence data for market simulation.
@@ -20,12 +20,6 @@ from dataclasses import dataclass, asdict
 import time
 import shutil
 
-# LangChain imports
-from langchain.agents import AgentExecutor, create_structured_chat_agent
-from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.schema import HumanMessage, SystemMessage
-from langchain.chat_models.base import BaseChatModel
-
 # Import for Perplexity API calls
 import requests
 from requests.adapters import HTTPAdapter
@@ -38,8 +32,8 @@ from italian_fashion_market import ItalianFashionMarket
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Store API key securely as environment variable
-PERPLEXITY_API_KEY = os.getenv('PERPLEXITY_API_KEY', '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')
+# Get API key from environment variable
+PERPLEXITY_API_KEY = os.getenv('PERPLEXITY_API_KEY')
 
 @dataclass
 class BrandIntelligence:
