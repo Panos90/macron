@@ -1,0 +1,104 @@
+{
+  "brand_name": "Under Armour",
+  "company_basics": {
+    "is_public": 1,
+    "years_in_business": 29,
+    "headquarter_italy": 0
+  },
+  "financial_data": {
+    "annual_revenue_millions": 5800.0,
+    "revenue_growth_rate": 0.03,
+    "profit_margin": 0.05,
+    "ebitda_margin": 0.08,
+    "financial_strength_score": 0.7
+  },
+  "market_position": {
+    "segment_id": [
+      1
+    ],
+    "avg_price_index": 60.0,
+    "price_tier": 2,
+    "geographic_reach": 0.8,
+    "market_share_estimate": 0.04
+  },
+  "innovation_profile": {
+    "technical_capability": 0.7,
+    "r_and_d_intensity": 0.04,
+    "innovation_count": 10,
+    "sustainability_score": 0.6,
+    "patent_count": 500
+  },
+  "partnership_history": {
+    "total_partnerships_3yr": 15,
+    "sportswear_partnerships": 10,
+    "partnership_success_rate": 0.8,
+    "collaboration_frequency": 0.6,
+    "outsourcing_ratio": 0.4
+  },
+  "brand_metrics": {
+    "heritage_score": 0.5,
+    "innovation_perception": 0.7,
+    "target_age_median": 30,
+    "target_income_index": 4,
+    "brand_heat": 0.7
+  },
+  "operations": {
+    "production_flexibility": 0.7,
+    "technical_manufacturing": 0.6,
+    "supply_chain_complexity": 0.8,
+    "digital_maturity": 0.7,
+    "lead_time_index": 60
+  },
+  "competitive_position": {
+    "competitor_count": 10,
+    "competitive_intensity": 0.8,
+    "differentiation_score": 0.7,
+    "disruption_risk": 0.5,
+    "strategic_agility": 0.7
+  },
+  "demand_elasticity": {
+    "price_elasticity": -0.7,
+    "trend_responsiveness": 0.7,
+    "functionality_premium": 0.2,
+    "sustainability_premium": 0.2,
+    "brand_loyalty": 0.7,
+    "segment_fluidity": 0.4
+  },
+  "resilience_metrics": {
+    "covid_performance": -0.1,
+    "recession_beta": 0.6,
+    "crisis_recovery_speed": 0.7,
+    "supply_chain_redundancy": 0.6,
+    "inventory_flexibility": 0.7
+  },
+  "influence_metrics": {
+    "market_leader_score": 0.6,
+    "media_amplification": 0.7,
+    "influencer_affinity": 0.7,
+    "viral_potential": 0.6,
+    "competitor_monitoring": 0.7
+  },
+  "strategic_flexibility": {
+    "pivot_history": 3,
+    "channel_flexibility": 0.7,
+    "price_ladder_range": 0.6,
+    "brand_stretch_limit": 0.5,
+    "ip_dependency": 0.3
+  },
+  "rivalry_matrix": {
+    "primary_rivals": [],
+    "rivalry_intensity": {},
+    "differentiation_axes": {
+      "price": 0.6,
+      "heritage": 0.4,
+      "innovation": 0.7,
+      "sustainability": 0.6
+    }
+  },
+  "market_dynamics": {
+    "home_market_advantage": 0.8,
+    "new_entrant_resistance": 0.6,
+    "brand_dilution_sensitivity": 0.7,
+    "segment_permeability": 0.5
+  }
+}

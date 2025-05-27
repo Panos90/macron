@@ -1,0 +1,116 @@
+{
+  "brand_name": "Gucci",
+  "company_basics": {
+    "is_public": 0,
+    "years_in_business": 104,
+    "headquarter_italy": 1
+  },
+  "financial_data": {
+    "annual_revenue_millions": 10500.0,
+    "revenue_growth_rate": 0.08,
+    "profit_margin": 0.25,
+    "ebitda_margin": 0.32,
+    "financial_strength_score": 0.85
+  },
+  "market_position": {
+    "segment_id": [
+      7
+    ],
+    "avg_price_index": 850.0,
+    "price_tier": 5,
+    "geographic_reach": 0.9,
+    "market_share_estimate": 0.15
+  },
+  "innovation_profile": {
+    "technical_capability": 0.7,
+    "r_and_d_intensity": 0.06,
+    "innovation_count": 12,
+    "sustainability_score": 0.65,
+    "patent_count": 85
+  },
+  "partnership_history": {
+    "total_partnerships_3yr": 18,
+    "sportswear_partnerships": 3,
+    "partnership_success_rate": 0.8,
+    "collaboration_frequency": 0.7,
+    "outsourcing_ratio": 0.3
+  },
+  "brand_metrics": {
+    "heritage_score": 0.9,
+    "innovation_perception": 0.75,
+    "target_age_median": 32,
+    "target_income_index": 5,
+    "brand_heat": 0.85
+  },
+  "operations": {
+    "production_flexibility": 0.7,
+    "technical_manufacturing": 0.8,
+    "supply_chain_complexity": 0.75,
+    "digital_maturity": 0.8,
+    "lead_time_index": 60
+  },
+  "competitive_position": {
+    "competitor_count": 12,
+    "competitive_intensity": 0.8,
+    "differentiation_score": 0.75,
+    "disruption_risk": 0.4,
+    "strategic_agility": 0.7
+  },
+  "demand_elasticity": {
+    "price_elasticity": -0.3,
+    "trend_responsiveness": 0.8,
+    "functionality_premium": 0.6,
+    "sustainability_premium": 0.5,
+    "brand_loyalty": 0.85,
+    "segment_fluidity": 0.6
+  },
+  "resilience_metrics": {
+    "covid_performance": -0.15,
+    "recession_beta": 0.6,
+    "crisis_recovery_speed": 0.8,
+    "supply_chain_redundancy": 0.65,
+    "inventory_flexibility": 0.7
+  },
+  "influence_metrics": {
+    "market_leader_score": 0.85,
+    "media_amplification": 0.9,
+    "influencer_affinity": 0.85,
+    "viral_potential": 0.8,
+    "competitor_monitoring": 0.75
+  },
+  "strategic_flexibility": {
+    "pivot_history": 5,
+    "channel_flexibility": 0.75,
+    "price_ladder_range": 0.7,
+    "brand_stretch_limit": 0.65,
+    "ip_dependency": 0.5
+  },
+  "rivalry_matrix": {
+    "primary_rivals": [
+      "Louis Vuitton",
+      "Prada",
+      "Chanel",
+      "Dior",
+      "Balenciaga"
+    ],
+    "rivalry_intensity": {
+      "Louis Vuitton": 0.9,
+      "Prada": 0.8,
+      "Chanel": 0.75,
+      "Dior": 0.7,
+      "Balenciaga": 0.65
+    },
+    "differentiation_axes": {
+      "price": 0.8,
+      "heritage": 0.9,
+      "innovation": 0.75,
+      "sustainability": 0.65
+    }
+  },
+  "market_dynamics": {
+    "home_market_advantage": 0.85,
+    "new_entrant_resistance": 0.8,
+    "brand_dilution_sensitivity": 0.7,
+    "segment_permeability": 0.5
+  }
+}

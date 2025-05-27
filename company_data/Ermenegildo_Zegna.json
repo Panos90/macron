@@ -1,0 +1,114 @@
+{
+  "brand_name": "Ermenegildo Zegna",
+  "company_basics": {
+    "is_public": 1,
+    "years_in_business": 115,
+    "headquarter_italy": 1
+  },
+  "financial_data": {
+    "annual_revenue_millions": 1300.0,
+    "revenue_growth_rate": 0.08,
+    "profit_margin": 0.12,
+    "ebitda_margin": 0.18,
+    "financial_strength_score": 0.7
+  },
+  "market_position": {
+    "segment_id": [
+      7
+    ],
+    "avg_price_index": 800.0,
+    "price_tier": 5,
+    "geographic_reach": 0.8,
+    "market_share_estimate": 0.05
+  },
+  "innovation_profile": {
+    "technical_capability": 0.7,
+    "r_and_d_intensity": 0.04,
+    "innovation_count": 5,
+    "sustainability_score": 0.8,
+    "patent_count": 12
+  },
+  "partnership_history": {
+    "total_partnerships_3yr": 7,
+    "sportswear_partnerships": 2,
+    "partnership_success_rate": 0.8,
+    "collaboration_frequency": 0.6,
+    "outsourcing_ratio": 0.3
+  },
+  "brand_metrics": {
+    "heritage_score": 0.9,
+    "innovation_perception": 0.7,
+    "target_age_median": 45,
+    "target_income_index": 5,
+    "brand_heat": 0.7
+  },
+  "operations": {
+    "production_flexibility": 0.7,
+    "technical_manufacturing": 0.8,
+    "supply_chain_complexity": 0.7,
+    "digital_maturity": 0.6,
+    "lead_time_index": 60
+  },
+  "competitive_position": {
+    "competitor_count": 8,
+    "competitive_intensity": 0.7,
+    "differentiation_score": 0.8,
+    "disruption_risk": 0.3,
+    "strategic_agility": 0.7
+  },
+  "demand_elasticity": {
+    "price_elasticity": -0.3,
+    "trend_responsiveness": 0.6,
+    "functionality_premium": 0.2,
+    "sustainability_premium": 0.2,
+    "brand_loyalty": 0.8,
+    "segment_fluidity": 0.4
+  },
+  "resilience_metrics": {
+    "covid_performance": -0.15,
+    "recession_beta": 0.6,
+    "crisis_recovery_speed": 0.7,
+    "supply_chain_redundancy": 0.6,
+    "inventory_flexibility": 0.6
+  },
+  "influence_metrics": {
+    "market_leader_score": 0.7,
+    "media_amplification": 0.6,
+    "influencer_affinity": 0.6,
+    "viral_potential": 0.5,
+    "competitor_monitoring": 0.7
+  },
+  "strategic_flexibility": {
+    "pivot_history": 3,
+    "channel_flexibility": 0.6,
+    "price_ladder_range": 0.6,
+    "brand_stretch_limit": 0.5,
+    "ip_dependency": 0.3
+  },
+  "rivalry_matrix": {
+    "primary_rivals": [
+      "Armani",
+      "Brioni",
+      "Canali",
+      "Loro Piana"
+    ],
+    "rivalry_intensity": {
+      "Armani": 0.8,
+      "Brioni": 0.7,
+      "Canali": 0.6,
+      "Loro Piana": 0.7
+    },
+    "differentiation_axes": {
+      "price": 0.7,
+      "heritage": 0.9,
+      "innovation": 0.7,
+      "sustainability": 0.8
+    }
+  },
+  "market_dynamics": {
+    "home_market_advantage": 0.9,
+    "new_entrant_resistance": 0.7,
+    "brand_dilution_sensitivity": 0.7,
+    "segment_permeability": 0.5
+  }
+}

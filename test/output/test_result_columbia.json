@@ -1,0 +1,115 @@
+{
+  "brand_name": "Columbia",
+  "company_basics": {
+    "is_public": 1,
+    "years_in_business": 87,
+    "headquarter_italy": 0
+  },
+  "financial_data": {
+    "annual_revenue_millions": 3500.0,
+    "revenue_growth_rate": 0.05,
+    "profit_margin": 0.08,
+    "ebitda_margin": 0.12,
+    "financial_strength_score": 0.7
+  },
+  "market_position": {
+    "segment_id": [
+      2
+    ],
+    "avg_price_index": 150.0,
+    "price_tier": 2,
+    "geographic_reach": 0.9,
+    "market_share_estimate": 0.04
+  },
+  "innovation_profile": {
+    "technical_capability": 0.7,
+    "r_and_d_intensity": 0.04,
+    "innovation_count": 15,
+    "sustainability_score": 0.6,
+    "patent_count": 25
+  },
+  "partnership_history": {
+    "total_partnerships_3yr": 8,
+    "sportswear_partnerships": 5,
+    "partnership_success_rate": 0.8,
+    "collaboration_frequency": 0.6,
+    "outsourcing_ratio": 0.7
+  },
+  "brand_metrics": {
+    "heritage_score": 0.8,
+    "innovation_perception": 0.6,
+    "target_age_median": 40,
+    "target_income_index": 2,
+    "brand_heat": 0.6
+  },
+  "operations": {
+    "production_flexibility": 0.7,
+    "technical_manufacturing": 0.8,
+    "supply_chain_complexity": 0.7,
+    "digital_maturity": 0.6,
+    "lead_time_index": 60
+  },
+  "competitive_position": {
+    "competitor_count": 12,
+    "competitive_intensity": 0.7,
+    "differentiation_score": 0.6,
+    "disruption_risk": 0.3,
+    "strategic_agility": 0.7
+  },
+  "demand_elasticity": {
+    "price_elasticity": -0.7,
+    "trend_responsiveness": 0.6,
+    "functionality_premium": 0.3,
+    "sustainability_premium": 0.2,
+    "brand_loyalty": 0.7,
+    "segment_fluidity": 0.4
+  },
+  "resilience_metrics": {
+    "covid_performance": -0.1,
+    "recession_beta": 0.6,
+    "crisis_recovery_speed": 0.7,
+    "supply_chain_redundancy": 0.6,
+    "inventory_flexibility": 0.6
+  },
+  "influence_metrics": {
+    "market_leader_score": 0.7,
+    "media_amplification": 0.6,
+    "influencer_affinity": 0.5,
+    "viral_potential": 0.4,
+    "competitor_monitoring": 0.7
+  },
+  "strategic_flexibility": {
+    "pivot_history": 3,
+    "channel_flexibility": 0.7,
+    "price_ladder_range": 0.6,
+    "brand_stretch_limit": 0.5,
+    "ip_dependency": 0.4
+  },
+  "rivalry_matrix": {
+    "primary_rivals": [
+      "The North Face",
+      "Patagonia",
+      "REI",
+      "L.L.Bean"
+    ],
+    "rivalry_intensity": {
+      "The North Face": 0.8,
+      "Patagonia": 0.7,
+      "REI": 0.5,
+      "L.L.Bean": 0.6
+    },
+    "differentiation_axes": {
+      "price": 0.6,
+      "heritage": 0.8,
+      "innovation": 0.6,
+      "sustainability": 0.5
+    }
+  },
+  "market_dynamics": {
+    "home_market_advantage": 0.8,
+    "new_entrant_resistance": 0.7,
+    "brand_dilution_sensitivity": 0.5,
+    "segment_permeability": 0.4
+  },
+  "_data_source": "api_direct"
+}

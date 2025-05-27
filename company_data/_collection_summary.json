@@ -1,0 +1,137 @@
+{
+  "collection_date": "20250527_145237",
+  "total_brands": 67,
+  "successful": 67,
+  "failed": 0,
+  "success_rate": 1.0,
+  "data_quality": {
+    "api_direct": 67,
+    "api_response_rate": 1.0,
+    "default_values_used": 0,
+    "percentage_with_real_data": 100.0
+  },
+  "brands_by_segment": {
+    "1. Core Technical Sportswear": {
+      "total": 11,
+      "collected": 11,
+      "collection_rate": 1.0,
+      "brands": [
+        "Adidas",
+        "Alpinestars",
+        "Arena",
+        "Asics",
+        "Castelli",
+        "La Sportiva",
+        "Macron",
+        "Mizuno",
+        "Nike",
+        "Puma",
+        "Under Armour"
+      ]
+    },
+    "2. Outdoor Technical Sportswear": {
+      "total": 11,
+      "collected": 11,
+      "collection_rate": 1.0,
+      "brands": [
+        "Columbia",
+        "Fj\u00e4llr\u00e4ven",
+        "Goldwin",
+        "Helly Hansen",
+        "Karpos",
+        "Mammut",
+        "Montura",
+        "Patagonia",
+        "Salewa",
+        "The North Face",
+        "Zegna Outdoor"
+      ]
+    },
+    "3. Athleisure": {
+      "total": 11,
+      "collected": 11,
+      "collection_rate": 1.0,
+      "brands": [
+        "Adidas",
+        "Champion",
+        "Ellesse",
+        "Fila",
+        "Kappa",
+        "Lacoste",
+        "Macron",
+        "New Balance",
+        "Nike",
+        "Puma",
+        "Reebok"
+      ]
+    },
+    "4. Luxury Activewear": {
+      "total": 6,
+      "collected": 6,
+      "collection_rate": 1.0,
+      "brands": [
+        "Alo Yoga",
+        "Bogner",
+        "Peak Performance",
+        "Rossignol",
+        "Sweaty Betty",
+        "Vuori"
+      ]
+    },
+    "5. Athluxury": {
+      "total": 6,
+      "collected": 6,
+      "collection_rate": 1.0,
+      "brands": [
+        "Amiri",
+        "Marcelo Burlon",
+        "Off-White",
+        "Palm Angels",
+        "Philipp Plein",
+        "Y-3"
+      ]
+    },
+    "6. High-Performance Luxury": {
+      "total": 13,
+      "collected": 13,
+      "collection_rate": 1.0,
+      "brands": [
+        "Acronym",
+        "Arc'teryx Veilance",
+        "Descente Allterrain",
+        "Goldwin",
+        "Lululemon",
+        "Moncler",
+        "Moncler Genius",
+        "NikeLab ACG",
+        "Prada Linea Rossa",
+        "Snow Peak",
+        "Stone Island",
+        "Ten C",
+        "Zegna Outdoor"
+      ]
+    },
+    "7. Luxury Fashion": {
+      "total": 15,
+      "collected": 15,
+      "collection_rate": 1.0,
+      "brands": [
+        "Balenciaga",
+        "Bottega Veneta",
+        "Brunello Cucinelli",
+        "Chanel",
+        "Dior",
+        "Dolce & Gabbana",
+        "Ermenegildo Zegna",
+        "Fendi",
+        "Giorgio Armani",
+        "Gucci",
+        "Prada",
+        "Saint Laurent",
+        "Salvatore Ferragamo",
+        "Valentino",
+        "Versace"
+      ]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "brand_name": "La Sportiva",
+  "company_basics": {
+    "is_public": 0,
+    "years_in_business": 95,
+    "headquarter_italy": 1
+  },
+  "financial_data": {
+    "annual_revenue_millions": 150.0,
+    "revenue_growth_rate": 0.08,
+    "profit_margin": 0.12,
+    "ebitda_margin": 0.18,
+    "financial_strength_score": 0.6
+  },
+  "market_position": {
+    "segment_id": [
+      1
+    ],
+    "avg_price_index": 600.0,
+    "price_tier": 4,
+    "geographic_reach": 0.7,
+    "market_share_estimate": 0.05
+  },
+  "innovation_profile": {
+    "technical_capability": 0.5,
+    "r_and_d_intensity": 0.04,
+    "innovation_count": 5,
+    "sustainability_score": 0.5,
+    "patent_count": 10
+  },
+  "partnership_history": {
+    "total_partnerships_3yr": 5,
+    "sportswear_partnerships": 2,
+    "partnership_success_rate": 0.8,
+    "collaboration_frequency": 0.4,
+    "outsourcing_ratio": 0.4
+  },
+  "brand_metrics": {
+    "heritage_score": 0.8,
+    "innovation_perception": 0.6,
+    "target_age_median": 30,
+    "target_income_index": 4,
+    "brand_heat": 0.7
+  },
+  "operations": {
+    "production_flexibility": 0.7,
+    "technical_manufacturing": 0.6,
+    "supply_chain_complexity": 0.7,
+    "digital_maturity": 0.7,
+    "lead_time_index": 80
+  },
+  "competitive_position": {
+    "competitor_count": 8,
+    "competitive_intensity": 0.7,
+    "differentiation_score": 0.7,
+    "disruption_risk": 0.3,
+    "strategic_agility": 0.6
+  },
+  "demand_elasticity": {
+    "price_elasticity": -0.6,
+    "trend_responsiveness": 0.6,
+    "functionality_premium": 0.2,
+    "sustainability_premium": 0.2,
+    "brand_loyalty": 0.8,
+    "segment_fluidity": 0.4
+  },
+  "resilience_metrics": {
+    "covid_performance": -0.1,
+    "recession_beta": 0.6,
+    "crisis_recovery_speed": 0.7,
+    "supply_chain_redundancy": 0.6,
+    "inventory_flexibility": 0.6
+  },
+  "influence_metrics": {
+    "market_leader_score": 0.6,
+    "media_amplification": 0.6,
+    "influencer_affinity": 0.6,
+    "viral_potential": 0.5,
+    "competitor_monitoring": 0.7
+  },
+  "strategic_flexibility": {
+    "pivot_history": 3,
+    "channel_flexibility": 0.6,
+    "price_ladder_range": 0.5,
+    "brand_stretch_limit": 0.4,
+    "ip_dependency": 0.3
+  },
+  "rivalry_matrix": {
+    "primary_rivals": [
+      "Salomon",
+      "Mammut",
+      "Arc'teryx"
+    ],
+    "rivalry_intensity": {
+      "Salomon": 0.8,
+      "Mammut": 0.7,
+      "Arc'teryx": 0.6
+    },
+    "differentiation_axes": {
+      "price": 0.6,
+      "heritage": 0.7,
+      "innovation": 0.5,
+      "sustainability": 0.6
+    }
+  },
+  "market_dynamics": {
+    "home_market_advantage": 0.8,
+    "new_entrant_resistance": 0.7,
+    "brand_dilution_sensitivity": 0.7,
+    "segment_permeability": 0.5
+  }
+}

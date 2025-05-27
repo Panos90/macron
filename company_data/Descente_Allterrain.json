@@ -1,0 +1,114 @@
+{
+  "brand_name": "Descente Allterrain",
+  "company_basics": {
+    "is_public": 1,
+    "years_in_business": 89,
+    "headquarter_italy": 0
+  },
+  "financial_data": {
+    "annual_revenue_millions": 1100.0,
+    "revenue_growth_rate": 0.03,
+    "profit_margin": 0.05,
+    "ebitda_margin": 0.12,
+    "financial_strength_score": 0.7
+  },
+  "market_position": {
+    "segment_id": [
+      6
+    ],
+    "avg_price_index": 450.0,
+    "price_tier": 4,
+    "geographic_reach": 0.6,
+    "market_share_estimate": 0.03
+  },
+  "innovation_profile": {
+    "technical_capability": 0.8,
+    "r_and_d_intensity": 0.05,
+    "innovation_count": 12,
+    "sustainability_score": 0.6,
+    "patent_count": 15
+  },
+  "partnership_history": {
+    "total_partnerships_3yr": 5,
+    "sportswear_partnerships": 3,
+    "partnership_success_rate": 0.8,
+    "collaboration_frequency": 0.4,
+    "outsourcing_ratio": 0.6
+  },
+  "brand_metrics": {
+    "heritage_score": 0.8,
+    "innovation_perception": 0.7,
+    "target_age_median": 32,
+    "target_income_index": 4,
+    "brand_heat": 0.6
+  },
+  "operations": {
+    "production_flexibility": 0.7,
+    "technical_manufacturing": 0.8,
+    "supply_chain_complexity": 0.7,
+    "digital_maturity": 0.6,
+    "lead_time_index": 75
+  },
+  "competitive_position": {
+    "competitor_count": 8,
+    "competitive_intensity": 0.7,
+    "differentiation_score": 0.7,
+    "disruption_risk": 0.3,
+    "strategic_agility": 0.6
+  },
+  "demand_elasticity": {
+    "price_elasticity": -0.3,
+    "trend_responsiveness": 0.6,
+    "functionality_premium": 0.2,
+    "sustainability_premium": 0.15,
+    "brand_loyalty": 0.7,
+    "segment_fluidity": 0.4
+  },
+  "resilience_metrics": {
+    "covid_performance": -0.1,
+    "recession_beta": 0.6,
+    "crisis_recovery_speed": 0.7,
+    "supply_chain_redundancy": 0.5,
+    "inventory_flexibility": 0.6
+  },
+  "influence_metrics": {
+    "market_leader_score": 0.5,
+    "media_amplification": 0.6,
+    "influencer_affinity": 0.6,
+    "viral_potential": 0.5,
+    "competitor_monitoring": 0.7
+  },
+  "strategic_flexibility": {
+    "pivot_history": 3,
+    "channel_flexibility": 0.6,
+    "price_ladder_range": 0.5,
+    "brand_stretch_limit": 0.4,
+    "ip_dependency": 0.3
+  },
+  "rivalry_matrix": {
+    "primary_rivals": [
+      "Mizuno",
+      "Goldwin",
+      "Wacoal",
+      "Gunze"
+    ],
+    "rivalry_intensity": {
+      "Mizuno": 0.8,
+      "Goldwin": 0.7,
+      "Wacoal": 0.5,
+      "Gunze": 0.4
+    },
+    "differentiation_axes": {
+      "price": 0.7,
+      "heritage": 0.8,
+      "innovation": 0.7,
+      "sustainability": 0.6
+    }
+  },
+  "market_dynamics": {
+    "home_market_advantage": 0.8,
+    "new_entrant_resistance": 0.6,
+    "brand_dilution_sensitivity": 0.5,
+    "segment_permeability": 0.3
+  }
+}

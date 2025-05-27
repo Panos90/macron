@@ -1,0 +1,111 @@
+{
+  "brand_name": "Puma",
+  "company_basics": {
+    "is_public": 1,
+    "years_in_business": 75,
+    "headquarter_italy": 0
+  },
+  "financial_data": {
+    "annual_revenue_millions": 8601.0,
+    "revenue_growth_rate": 0.016,
+    "profit_margin": 0.035,
+    "ebitda_margin": 0.12,
+    "financial_strength_score": 0.7
+  },
+  "market_position": {
+    "segment_id": [
+      1,
+      3
+    ],
+    "avg_price_index": 120.0,
+    "price_tier": 2,
+    "geographic_reach": 0.8,
+    "market_share_estimate": 0.08
+  },
+  "innovation_profile": {
+    "technical_capability": 0.7,
+    "r_and_d_intensity": 0.04,
+    "innovation_count": 12,
+    "sustainability_score": 0.6,
+    "patent_count": 85
+  },
+  "partnership_history": {
+    "total_partnerships_3yr": 25,
+    "sportswear_partnerships": 15,
+    "partnership_success_rate": 0.8,
+    "collaboration_frequency": 0.7,
+    "outsourcing_ratio": 0.8
+  },
+  "brand_metrics": {
+    "heritage_score": 0.8,
+    "innovation_perception": 0.7,
+    "target_age_median": 28,
+    "target_income_index": 2,
+    "brand_heat": 0.7
+  },
+  "operations": {
+    "production_flexibility": 0.7,
+    "technical_manufacturing": 0.8,
+    "supply_chain_complexity": 0.8,
+    "digital_maturity": 0.7,
+    "lead_time_index": 60
+  },
+  "competitive_position": {
+    "competitor_count": 8,
+    "competitive_intensity": 0.8,
+    "differentiation_score": 0.6,
+    "disruption_risk": 0.5,
+    "strategic_agility": 0.7
+  },
+  "demand_elasticity": {
+    "price_elasticity": -1.2,
+    "trend_responsiveness": 0.8,
+    "functionality_premium": 0.15,
+    "sustainability_premium": 0.12,
+    "brand_loyalty": 0.7,
+    "segment_fluidity": 0.6
+  },
+  "resilience_metrics": {
+    "covid_performance": -0.05,
+    "recession_beta": 1.1,
+    "crisis_recovery_speed": 0.8,
+    "supply_chain_redundancy": 0.6,
+    "inventory_flexibility": 0.7
+  },
+  "influence_metrics": {
+    "market_leader_score": 0.7,
+    "media_amplification": 0.8,
+    "influencer_affinity": 0.8,
+    "viral_potential": 0.7,
+    "competitor_monitoring": 0.8
+  },
+  "strategic_flexibility": {
+    "pivot_history": 4,
+    "channel_flexibility": 0.7,
+    "price_ladder_range": 0.6,
+    "brand_stretch_limit": 0.5,
+    "ip_dependency": 0.4
+  },
+  "rivalry_matrix": {
+    "primary_rivals": [
+      "Nike",
+      "Adidas"
+    ],
+    "rivalry_intensity": {
+      "Nike": 0.9,
+      "Adidas": 0.85
+    },
+    "differentiation_axes": {
+      "price": 0.6,
+      "heritage": 0.7,
+      "innovation": 0.6,
+      "sustainability": 0.6
+    }
+  },
+  "market_dynamics": {
+    "home_market_advantage": 0.6,
+    "new_entrant_resistance": 0.7,
+    "brand_dilution_sensitivity": 0.5,
+    "segment_permeability": 0.6
+  }
+}

@@ -14,6 +14,7 @@ import seaborn as sns
 from datetime import datetime
 from pathlib import Path
 import warnings
+import os
 warnings.filterwarnings('ignore')
 
 class MonteCarloCostAnalysis:
@@ -1688,8 +1689,8 @@ class MonteCarloCostAnalysis:
         """Export comprehensive results"""
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         
-        # Create results directory
-        results_dir = Path("results")
+        # Create product_costs directory
+        results_dir = Path("product_costs")
         results_dir.mkdir(exist_ok=True)
         
         # Export comprehensive JSON
@@ -1717,8 +1718,8 @@ class MonteCarloCostAnalysis:
         """Generate executive summary with strategic insights per product"""
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         
-        # Create results directory
-        results_dir = Path("results")
+        # Create product_costs directory
+        results_dir = Path("product_costs")
         results_dir.mkdir(exist_ok=True)
         
         # Get EU and Asian results for comparison
@@ -2134,8 +2135,8 @@ class MonteCarloCostAnalysis:
         """Generate visualization plots for fixed costs and COGS analysis"""
         print("\n📊 Generating visualization plots...")
         
-        # Create results directory if it doesn't exist
-        results_dir = Path("results")
+        # Create product_costs directory if it doesn't exist
+        results_dir = Path("product_costs")
         results_dir.mkdir(exist_ok=True)
         
         # Set up plotting style

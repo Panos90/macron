@@ -1,260 +1,161 @@
-# ModaMesh Phase 1: Comprehensive Monte Carlo Cost Analysis
+# ModaMesh - Italian Fashion Market Simulation Framework
 
-## Project Overview
+ModaMesh is a multi-agent simulation system analyzing the Italian fashion market's response to Macron's B2B business models. The project consists of three main modules: Cost Estimation, Brand Intelligence, and Testing Suite.
 
-**ModaMesh** is a multi-agent simulation system designed to analyze the Italian fashion market's response to Macron's innovative B2B business models. This Phase 1 implementation provides a comprehensive cost foundation through advanced Monte Carlo analysis with detailed product specifications and strategic insights.
-
-### Business Context
-
-**Macron** is an Italian sportswear brand that has developed cutting-edge technical garment components across four categories:
-- **Technical Inner Layers & Insulation Systems**: Advanced moisture management and thermal regulation
-- **Structural Enhancement Solutions**: Performance reinforcements and closure systems  
-- **Sustainable Performance Materials**: Eco-friendly high-performance fabrics
-- **Specialized Components**: Magnetic closures and auto-tension systems
-
-### Business Models to Simulate
-1. **"Powered by Macron"** (Co-branded partnerships)
-2. **White-Label** (Invisible technical partnerships)
-
-## Phase 1: Comprehensive Cost Foundation Analysis
-
-This phase establishes a robust economic foundation for agent-based decision making through detailed cost modeling across **three geographical production scenarios**.
-
-### Key Features
-
-#### 🎯 Advanced Monte Carlo Simulation
-- **100,000 iterations** for statistical robustness
-- **Three geographical scenarios**: EU Production, Asian Production, Hybrid Model
-- **Detailed component-level cost modeling** with realistic distributions
-- **Advanced risk metrics**: VaR, statistical distributions, correlation analysis
-- **Portfolio-level strategic analysis** across all 10 products
-
-#### 📊 Comprehensive Product Analysis
-- **10 fully-specified products** with detailed cost structures
-- **Component-level cost breakdown** (materials, processing, validation, QA)
-- **Realistic statistical distributions**: Triangular, Beta, Normal, Exponential
-- **Geographical cost multipliers** for labor, materials, and testing
-- **Technical specifications** for each product category
-
-#### 📈 Executive Summary Generation
-- **Automated strategic insights** for all products
-- **Cost performance analysis** across geographical scenarios
-- **Risk assessment and recommendations** per product
-- **Portfolio-level strategic guidance** for decision-makers
-- **Investment prioritization** based on cost-benefit analysis
-
-#### 💾 Dual Export System
-- **Detailed Analysis JSON**: Complete statistical data and distributions
-- **Executive Summary JSON**: Strategic insights and recommendations
-- **Timestamped results** for version control and tracking
-
-## Installation & Setup
-
-### Prerequisites
-```bash
-pip install -r requirements.txt
-```
-
-### Required Dependencies
-- `numpy>=1.21.0` - Numerical computing and statistical distributions
-- `pandas>=1.3.0` - Data manipulation and analysis
-- `matplotlib>=3.5.0` - Plotting and visualization
-- `seaborn>=0.11.0` - Statistical visualization
-- `scipy>=1.7.0` - Advanced statistical functions
-
-## Usage
-
-### Basic Usage
-```python
-from cost_estimation import MonteCarloCostAnalysis
-
-# Initialize analysis with 100,000 simulations
-analysis = MonteCarloCostAnalysis()
-
-# Run comprehensive Monte Carlo analysis
-results = analysis.run_analysis()
-
-# Results automatically exported to:
-# - results/analysis_YYYYMMDD_HHMMSS.json (detailed data)
-# - results/executive_summary_YYYYMMDD_HHMMSS.json (strategic insights)
-```
-
-### Command Line Usage
-```bash
-# Run complete analysis
-python3 cost_estimation.py
-
-# Output includes:
-# ✅ 100,000 Monte Carlo simulations
-# ✅ 3 geographical scenarios analyzed
-# ✅ 10 products with detailed cost structures
-# ✅ Executive summary with strategic insights
-# ✅ JSON exports for integration
-```
-
-## File Structure
+## 🏗️ Project Structure
 
 ```
 macron/
-├── macron_products.json              # Product definitions and specifications
-├── cost_estimation.py                # Main Monte Carlo analysis system
-├── requirements.txt                  # Dependencies
-├── README.md                         # This file
-└── results/                          # Generated outputs
-    ├── analysis_YYYYMMDD_HHMMSS.json         # Detailed statistical data
-    └── executive_summary_YYYYMMDD_HHMMSS.json # Strategic insights
+├── cost_estimation.py           # Monte Carlo cost analysis module
+├── brand_intelligence_agent.py  # LangChain agents for brand intelligence
+├── italian_fashion_market.py    # Italian fashion market data & utilities
+├── test/                        # Testing suite
+│   ├── test.py                 # Unified test runner
+│   ├── test_cost_estimation.py
+│   ├── test_italian_fashion_market.py
+│   ├── test_single_brand.py
+│   └── test_direct_api.py
+├── data/                        # Data files
+│   ├── macron_products.json    # Macron product definitions
+│   └── italian_fashion_market.json
+├── product_costs/               # Cost analysis outputs
+└── company_data/                # Brand intelligence outputs
 ```
 
-## Product Portfolio & Detailed Specifications
+## 📋 Prerequisites
 
-### Technical Inner Layers & Insulation Systems
-#### **Hydrotex Moisture-Control Liners** 
-- **R&D**: €475k (Hydrophobic coating, Moisture transport, Durability testing)
-- **Variable Costs**: EU €22.45/unit, Asia €6.95/unit (69.1% savings)
-- **Key Components**: Hydrophobic coating, moisture transport system, durability validation
-- **Strategic Insight**: Premium moisture management with excellent cost optimization
+- Python 3.8+
+- Perplexity API key for brand intelligence module
 
-#### **EcoMesh Ventilation Panels**
-- **R&D**: €400k (Airflow optimization, Mesh durability, Integration testing)
-- **Variable Costs**: EU €16.89/unit, Asia €8.94/unit (47.1% savings)
-- **Key Components**: Mesh structure, airflow optimization, integration systems
+### Environment Setup
 
-#### **HD Bonded Insulation Pads**
-- **R&D**: €450k (Thermal efficiency, Bonding adhesive, Compression testing)
-- **Variable Costs**: EU €13.42/unit, Asia €3.77/unit (71.9% savings)
-- **Key Components**: Insulation material, bonding adhesive, thermal validation
-- **Strategic Insight**: Outstanding savings potential - prioritize Asian production
+For the Brand Intelligence module and tests, you must set the Perplexity API key:
 
-#### **Phase Change Material (PCM) Inserts**
-- **R&D**: €550k (PCM formulation, Encapsulation, Thermal cycling)
-- **Variable Costs**: EU €30.67/unit, Asia €16.33/unit (46.8% savings)
-- **Key Components**: PCM material, encapsulation system, thermal testing
-
-### Structural Enhancement Solutions
-#### **Performance Jacquard Reinforcement**
-- **R&D**: €725k (Jacquard programming, Elastane integration, Stretch testing)
-- **Variable Costs**: EU €134.72/unit, Asia €91.77/unit (31.9% savings)
-- **Key Components**: Jacquard fabric, elastane premium, 4-way stretch processing
-- **Strategic Insight**: Complex textile engineering - hybrid model recommended
-
-#### **Abrasion-Resistant Bonding**
-- **R&D**: €450k (Polymer research, Durability testing, Application methods)
-- **Variable Costs**: EU €17.23/unit, Asia €9.45/unit (45.2% savings)
-- **Key Components**: Polymer coating, durability validation, application systems
-
-#### **MacronLock Magnetic Closures**
-- **R&D**: €325k (8N strength testing, Concealed mechanism, Magnetic calibration)
-- **Variable Costs**: EU €29.22/unit, Asia €10.51/unit (64.0% savings)
-- **Key Components**: Neodymium magnets, CNC machining, assembly calibration
-- **Strategic Insight**: Excellent cost optimization with established technology
-
-#### **Auto-Tension Drawstrings**
-- **R&D**: €275k (Tension mechanism, Silicone grip, Durability testing)
-- **Variable Costs**: EU €8.94/unit, Asia €4.47/unit (50.0% savings)
-- **Key Components**: Tension mechanism, silicone grip technology, durability systems
-
-### Sustainable Performance Materials
-#### **100% Recycled Performance Jacquard**
-- **R&D**: €750k (PET recycling, CO₂ certification, Performance validation)
-- **Variable Costs**: EU €107.84/unit, Asia €28.10/unit (73.9% savings)
-- **Key Components**: PET bottle processing, recycled fiber spinning, carbon validation
-- **Strategic Insight**: Exceptional savings with sustainability compliance
-
-#### **Bio-Based Water Repellents**
-- **R&D**: €800k (Bio-polymer research, Performance testing, Regulatory compliance)
-- **Variable Costs**: EU €13.42/unit, Asia €7.37/unit (45.1% savings)
-- **Key Components**: Bio-polymer coating, performance validation, regulatory testing
-- **Strategic Insight**: Highest R&D investment with regulatory complexity
-
-## Key Analysis Outputs
-
-### Portfolio Summary
-- **Total R&D Investment**: €5.77M across all scenarios
-- **Lead Times**: EU (8 weeks), Asia (16 weeks), Hybrid (12 weeks)
-- **Cost Optimization Range**: 31.9% - 73.9% savings (EU vs Asia)
-- **Top Risk Products**: Bio-based materials, recycled jacquard, PCM inserts
-
-### Geographical Scenario Analysis
-#### **EU Production**
-- **Advantages**: Shortest lead times, quality control, IP protection
-- **Considerations**: Higher labor and material costs
-
-#### **Asian Production** 
-- **Advantages**: Significant cost savings (31.9% - 73.9%)
-- **Considerations**: Longer lead times, supply chain complexity
-
-#### **Hybrid Model**
-- **Advantages**: Balanced cost-quality optimization
-- **Strategic Value**: Risk mitigation and flexibility
-
-### Executive Summary Features
-- **Strategic positioning** for each product
-- **Cost performance analysis** across scenarios
-- **Risk assessment** and management recommendations
-- **Investment prioritization** guidance
-- **Portfolio-level strategic insights**
-
-## Integration with ModaMesh Phase 2
-
-The comprehensive analysis generates structured data for agent-based simulation:
-
-```json
-{
-  "metadata": {
-    "analysis_date": "2024-XX-XX",
-    "simulation_count": 100000,
-    "scenarios": ["EU_Production", "Asian_Production", "Hybrid_Model"]
-  },
-  "products": {
-    "Product_Name": {
-      "fixed_rnd_costs": {
-        "total_eur": 475000,
-        "components": {...}
-      },
-      "variable_costs": {
-        "eu_production": 22.45,
-        "asian_production": 6.95,
-        "hybrid_model": 14.70
-      },
-      "strategic_insights": {
-        "cost_optimization_potential": "69.1%",
-        "risk_level": "moderate",
-        "recommendations": [...]
-      }
-    }
-  },
-  "portfolio_analysis": {
-    "total_rnd_investment": 5770000,
-    "geographical_optimization": {...},
-    "risk_management": {...}
-  }
-}
+```bash
+export PERPLEXITY_API_KEY='your-api-key-here'
 ```
 
-## Next Steps: Phase 2
+## 🧩 Module Overview
 
-The comprehensive cost foundation established in Phase 1 enables:
+### 1. Cost Estimation Module (`cost_estimation.py`)
 
-1. **Agent Architecture**: LangChain-based fashion brand decision agents
-2. **Market Dynamics**: Demand modeling with cost-aware pricing
-3. **Partnership Simulation**: "Powered by Macron" vs White-Label scenarios
-4. **Strategic Optimization**: Portfolio allocation with geographical considerations
-5. **Risk Management**: Cost-based risk assessment and mitigation strategies
+Performs Monte Carlo simulations to analyze production costs for 10 Macron products across 3 geographical scenarios.
 
-## Technical Implementation
+**Features:**
+- 100,000 Monte Carlo simulations per scenario
+- Statistical distributions for cost components
+- Three production scenarios: EU, Asian, and Hybrid
+- Comprehensive visualizations and reports
 
-### Advanced Statistical Modeling
-- **Component-level distributions**: Triangular, Beta, Normal, Exponential
-- **Geographical multipliers**: Labor, materials, testing cost adjustments
-- **Correlation modeling**: Inter-product cost dependencies
-- **Risk metrics**: VaR calculations and portfolio analysis
+**Usage:**
+```bash
+python cost_estimation.py
+```
 
-### Performance Optimization
-- **Vectorized operations**: Efficient 100k simulation processing
-- **Memory management**: Optimized for large-scale statistical analysis
-- **Modular architecture**: Easy extension for additional products/scenarios
+**Output:** Results saved to `product_costs/` directory:
+- `analysis_YYYYMMDD_HHMMSS.json` - Full simulation data
+- `executive_summary_YYYYMMDD_HHMMSS.json` - Key insights
+- Visualization plots (PNG files)
 
----
+### 2. Brand Intelligence Module (`brand_intelligence_agent.py`)
 
-**ModaMesh Phase 1 Complete** ✅  
-*Ready for Phase 2: Agent-Based Market Simulation* 
+Collects comprehensive business intelligence for 67 Italian fashion brands using Perplexity Sonar Pro API.
+
+**Features:**
+- LangChain-based intelligent agents
+- 15 intelligence categories per brand
+- 80+ metrics collected
+- Robust JSON extraction handling markdown/text artifacts
+- 60-second timeout with 4 retries
+- Individual JSON files per brand
+
+**Usage:**
+```bash
+# Set API key first
+export PERPLEXITY_API_KEY='your-api-key'
+
+# Run collection
+python brand_intelligence_agent.py
+```
+
+**Output:** Results saved to `company_data/` directory:
+- Individual brand files: `{BrandName}.json`
+- `_collection_summary.json` - Collection statistics
+- `_failed_brands.json` - Any failed collections
+
+### 3. Testing Suite (`test/`)
+
+Comprehensive test suite for all modules with unified test runner.
+
+**Features:**
+- Environment validation
+- Module functionality tests
+- API connectivity tests
+- Colored output for clarity
+
+**Usage:**
+```bash
+# Run all tests
+python test/test.py
+
+# Run individual tests
+python test/test_cost_estimation.py
+python test/test_italian_fashion_market.py
+python test/test_single_brand.py
+python test/test_direct_api.py
+```
+
+## 🚀 Quick Start
+
+1. **Clone the repository:**
+   ```bash
+   git clone [repository-url]
+   cd macron
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set up environment (for Brand Intelligence):**
+   ```bash
+   export PERPLEXITY_API_KEY='your-api-key'
+   ```
+
+4. **Run tests to verify setup:**
+   ```bash
+   python test/test.py
+   ```
+
+5. **Run cost analysis:**
+   ```bash
+   python cost_estimation.py
+   ```
+
+6. **Collect brand intelligence:**
+   ```bash
+   python brand_intelligence_agent.py
+   ```
+
+## 📊 Data Sources
+
+- **Macron Products:** 10 innovative products across 4 categories
+- **Italian Fashion Brands:** 67 brands across 7 market segments
+- **Cost Models:** Statistical distributions based on industry benchmarks
+
+## 🔍 Key Insights
+
+The system provides:
+- Production cost optimization strategies
+- Market positioning intelligence
+- Competitive dynamics analysis
+- Partnership opportunity identification
+
+## 📝 License
+
+[Your License Here]
+
+## 👥 Contributors
+
+[Your Contributors Here] 

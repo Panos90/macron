@@ -1,0 +1,116 @@
+{
+  "brand_name": "Ten C",
+  "company_basics": {
+    "is_public": 0,
+    "years_in_business": 12,
+    "headquarter_italy": 1
+  },
+  "financial_data": {
+    "annual_revenue_millions": 45.0,
+    "revenue_growth_rate": 0.08,
+    "profit_margin": 0.12,
+    "ebitda_margin": 0.18,
+    "financial_strength_score": 0.6
+  },
+  "market_position": {
+    "segment_id": [
+      6
+    ],
+    "avg_price_index": 650.0,
+    "price_tier": 4,
+    "geographic_reach": 0.4,
+    "market_share_estimate": 0.01
+  },
+  "innovation_profile": {
+    "technical_capability": 0.7,
+    "r_and_d_intensity": 0.05,
+    "innovation_count": 1,
+    "sustainability_score": 0.6,
+    "patent_count": 0
+  },
+  "partnership_history": {
+    "total_partnerships_3yr": 2,
+    "sportswear_partnerships": 0,
+    "partnership_success_rate": 0.8,
+    "collaboration_frequency": 0.2,
+    "outsourcing_ratio": 0.3
+  },
+  "brand_metrics": {
+    "heritage_score": 0.5,
+    "innovation_perception": 0.7,
+    "target_age_median": 35,
+    "target_income_index": 4,
+    "brand_heat": 0.6
+  },
+  "operations": {
+    "production_flexibility": 0.6,
+    "technical_manufacturing": 0.8,
+    "supply_chain_complexity": 0.5,
+    "digital_maturity": 0.4,
+    "lead_time_index": 75
+  },
+  "competitive_position": {
+    "competitor_count": 7,
+    "competitive_intensity": 0.7,
+    "differentiation_score": 0.8,
+    "disruption_risk": 0.3,
+    "strategic_agility": 0.6
+  },
+  "demand_elasticity": {
+    "price_elasticity": -0.3,
+    "trend_responsiveness": 0.4,
+    "functionality_premium": 0.3,
+    "sustainability_premium": 0.2,
+    "brand_loyalty": 0.7,
+    "segment_fluidity": 0.2
+  },
+  "resilience_metrics": {
+    "covid_performance": -0.1,
+    "recession_beta": 0.6,
+    "crisis_recovery_speed": 0.7,
+    "supply_chain_redundancy": 0.5,
+    "inventory_flexibility": 0.6
+  },
+  "influence_metrics": {
+    "market_leader_score": 0.3,
+    "media_amplification": 0.5,
+    "influencer_affinity": 0.6,
+    "viral_potential": 0.4,
+    "competitor_monitoring": 0.5
+  },
+  "strategic_flexibility": {
+    "pivot_history": 1,
+    "channel_flexibility": 0.4,
+    "price_ladder_range": 0.3,
+    "brand_stretch_limit": 0.4,
+    "ip_dependency": 0.6
+  },
+  "rivalry_matrix": {
+    "primary_rivals": [
+      "Blauer",
+      "Stone Island",
+      "C.P. Company",
+      "Moncler",
+      "Woolrich"
+    ],
+    "rivalry_intensity": {
+      "Blauer": 0.7,
+      "Stone Island": 0.8,
+      "C.P. Company": 0.8,
+      "Moncler": 0.6,
+      "Woolrich": 0.5
+    },
+    "differentiation_axes": {
+      "price": 0.7,
+      "heritage": 0.4,
+      "innovation": 0.8,
+      "sustainability": 0.6
+    }
+  },
+  "market_dynamics": {
+    "home_market_advantage": 0.8,
+    "new_entrant_resistance": 0.6,
+    "brand_dilution_sensitivity": 0.7,
+    "segment_permeability": 0.3
+  }
+}

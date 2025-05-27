@@ -1,0 +1,110 @@
+{
+  "brand_name": "Lacoste",
+  "company_basics": {
+    "is_public": 0,
+    "years_in_business": 91,
+    "headquarter_italy": 0
+  },
+  "financial_data": {
+    "annual_revenue_millions": 1700.0,
+    "revenue_growth_rate": 0.05,
+    "profit_margin": 0.1,
+    "ebitda_margin": 0.15,
+    "financial_strength_score": 0.7
+  },
+  "market_position": {
+    "segment_id": [
+      3
+    ],
+    "avg_price_index": 500.0,
+    "price_tier": 3,
+    "geographic_reach": 0.8,
+    "market_share_estimate": 0.02
+  },
+  "innovation_profile": {
+    "technical_capability": 0.4,
+    "r_and_d_intensity": 0.02,
+    "innovation_count": 4,
+    "sustainability_score": 0.5,
+    "patent_count": 2
+  },
+  "partnership_history": {
+    "total_partnerships_3yr": 5,
+    "sportswear_partnerships": 2,
+    "partnership_success_rate": 0.7,
+    "collaboration_frequency": 0.4,
+    "outsourcing_ratio": 0.5
+  },
+  "brand_metrics": {
+    "heritage_score": 0.8,
+    "innovation_perception": 0.5,
+    "target_age_median": 35,
+    "target_income_index": 3,
+    "brand_heat": 0.6
+  },
+  "operations": {
+    "production_flexibility": 0.6,
+    "technical_manufacturing": 0.4,
+    "supply_chain_complexity": 0.7,
+    "digital_maturity": 0.6,
+    "lead_time_index": 75
+  },
+  "competitive_position": {
+    "competitor_count": 6,
+    "competitive_intensity": 0.7,
+    "differentiation_score": 0.6,
+    "disruption_risk": 0.4,
+    "strategic_agility": 0.6
+  },
+  "demand_elasticity": {
+    "price_elasticity": -0.6,
+    "trend_responsiveness": 0.6,
+    "functionality_premium": 0.2,
+    "sustainability_premium": 0.2,
+    "brand_loyalty": 0.7,
+    "segment_fluidity": 0.4
+  },
+  "resilience_metrics": {
+    "covid_performance": -0.15,
+    "recession_beta": 0.7,
+    "crisis_recovery_speed": 0.7,
+    "supply_chain_redundancy": 0.5,
+    "inventory_flexibility": 0.6
+  },
+  "influence_metrics": {
+    "market_leader_score": 0.5,
+    "media_amplification": 0.6,
+    "influencer_affinity": 0.6,
+    "viral_potential": 0.5,
+    "competitor_monitoring": 0.6
+  },
+  "strategic_flexibility": {
+    "pivot_history": 2,
+    "channel_flexibility": 0.6,
+    "price_ladder_range": 0.5,
+    "brand_stretch_limit": 0.4,
+    "ip_dependency": 0.2
+  },
+  "rivalry_matrix": {
+    "primary_rivals": [
+      "Ralph Lauren",
+      "Tommy Hilfiger",
+      "Fred Perry",
+      "Hugo Boss",
+      "Armani Exchange"
+    ],
+    "rivalry_intensity": {},
+    "differentiation_axes": {
+      "price": 0.5,
+      "heritage": 0.7,
+      "innovation": 0.4,
+      "sustainability": 0.5
+    }
+  },
+  "market_dynamics": {
+    "home_market_advantage": 0.8,
+    "new_entrant_resistance": 0.6,
+    "brand_dilution_sensitivity": 0.5,
+    "segment_permeability": 0.5
+  }
+}
