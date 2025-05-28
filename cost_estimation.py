@@ -760,7 +760,7 @@ class MonteCarloCostAnalysis:
     def load_products(self):
         """Load product definitions from JSON file"""
         try:
-            with open('macron_products.json', 'r') as f:
+            with open('data/macron_products.json', 'r') as f:
                 product_data = json.load(f)
             
             # Extract all 10 products
@@ -776,7 +776,7 @@ class MonteCarloCostAnalysis:
             
             return products
         except FileNotFoundError:
-            print("❌ macron_products.json not found. Using predefined product list.")
+            print("❌ data/macron_products.json not found. Using predefined product list.")
             return list(self.cost_assumptions.keys())
     
     def calculate_costs(self, product_name, scenario_name, scenario_params):

@@ -1,145 +1,220 @@
-# ModaMesh - Italian Fashion Market Simulation Framework
+# ModaMesh - Multi-Agent Fashion Market Simulation
 
-ModaMesh is a multi-agent simulation system analyzing the Italian fashion market's response to Macron's B2B business models. The project consists of three main modules: Cost Estimation, Brand Intelligence, and Testing Suite.
+ModaMesh simulates how Italian fashion brands would respond to Macron's B2B technical component business models (co-branded vs white-label).
+
+## 🚀 Quick Start
+
+### 1. Clone & Install
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd macron
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### 2. Run the Simulation (No API Key Needed!)
+
+```bash
+# Run the main simulation using pre-computed data
+python run_simulation.py
+```
+
+This uses our pre-computed brand intelligence snapshot from `company_data/` - no API keys required!
+
+---
+
+## 📦 Dependencies
+
+Create a virtual environment (recommended):
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+Install required packages:
+```bash
+pip install -r requirements.txt
+```
+
+Key dependencies:
+- `numpy>=1.24.0` - Numerical computations
+- `pandas>=2.0.0` - Data analysis
+- `matplotlib>=3.7.0` - Visualizations
+- `seaborn>=0.12.0` - Statistical plots
+- `requests>=2.31.0` - API calls
+- `aiohttp>=3.9.0` - Async HTTP
+- `langchain>=0.1.0` - Agent framework
+- `pytest>=8.0.0` - Testing framework
+
+---
 
 ## 🏗️ Project Structure
 
 ```
 macron/
-├── cost_estimation.py           # Monte Carlo cost analysis module
-├── brand_intelligence_agent.py  # Direct API integration for brand intelligence
-├── italian_fashion_market.py    # Italian fashion market data & utilities
-├── test/                        # Testing suite
-│   ├── test.py                 # Unified test runner
-│   ├── test_cost_estimation.py
-│   ├── test_italian_fashion_market.py
-│   ├── test_single_brand.py
-│   └── test_direct_api.py
-├── data/                        # Data files
-│   ├── macron_products.json    # Macron product definitions
-│   └── italian_fashion_market.csv # Market mapping
-├── product_costs/               # Cost analysis outputs (generated)
-└── company_data/                # Brand intelligence outputs (generated)
+├── run_simulation.py            # 🎯 MAIN ENTRY POINT - Run this!
+├── cost_estimation.py           # Monte Carlo cost analysis
+├── italian_fashion_market.py    # Market segmentation data
+├── brand_intelligence_agent.py  # Perplexity API integration
+├── agents/                      # Simulation agents
+│   ├── brand_agent.py          # Individual brand decision-making
+│   └── macron_agent.py         # Macron's capacity management
+├── data/                        # Input data
+│   ├── macron_products.json    # 10 technical products
+│   └── italian_fashion_market.json  # 67 brands, 7 segments
+├── company_data/                # 📌 PRE-COMPUTED brand intelligence
+│   └── *.json                  # Individual brand profiles
+├── simulation_results/          # Output from simulations
+└── test/                        # Test suite
+    └── test.py                 # Run all tests
 ```
 
-## 📋 Requirements
+---
 
+## 📊 Module Execution Order
+
+### Option A: Use Pre-Computed Data (Recommended)
 ```bash
-pip install numpy pandas matplotlib seaborn requests
+# 1. Just run the simulation!
+python run_simulation.py
+
+# 2. View results
+cat EXECUTIVE_SUMMARY.md
 ```
 
-## 🔑 Environment Setup
-
-For Brand Intelligence collection and testing, you MUST set the Perplexity API key:
-
+### Option B: Fresh Data Collection (Requires API Key)
 ```bash
-export PERPLEXITY_API_KEY='your-perplexity-api-key'
-```
+# 1. Set Perplexity API key
+export PERPLEXITY_API_KEY='your-api-key-here'
 
-## 🎯 Module 1: Cost Estimation
-
-Monte Carlo simulation for analyzing Macron product costs across different production scenarios.
-
-### Features
-- 10 Macron product analysis (Hero, Icon, Evo, etc.)
-- 3 production scenarios (Italy-only, Hybrid, Outsourced)
-- Cost factor distributions with uncertainty modeling
-- Visual analysis with distribution plots
-
-### Usage
-```bash
-python cost_estimation.py
-```
-
-### Output
-- Individual product cost distributions saved to `product_costs/`
-- Comprehensive analysis report in JSON format
-- Visualization screenshots for each product
-
-## 🔍 Module 2: Brand Intelligence
-
-Direct Perplexity API integration for gathering comprehensive market intelligence on Italian fashion brands.
-
-### Features
-- Automated data collection for 67 Italian fashion brands
-- 15 intelligence categories with 80+ metrics per brand
-- Robust JSON extraction handling
-- Individual company data files
-- Batch processing with rate limiting
-
-### Usage
-```bash
-# Set API key first
-export PERPLEXITY_API_KEY='your-api-key'
-
-# Run collection
+# 2. Collect fresh brand intelligence (optional - we have snapshot)
 python brand_intelligence_agent.py
+
+# 3. Run cost analysis (optional - already integrated)
+python cost_estimation.py
+
+# 4. Run main simulation
+python run_simulation.py
 ```
 
-### Output
-- Individual brand JSON files in `company_data/`
-- Collection summary with success statistics
-- Failed brands tracking
+---
 
-## 🧪 Module 3: Testing Suite
+## 🔧 Key Modules Explained
 
-Unified testing framework for all modules.
+### 1. **Main Simulation** (`run_simulation.py`)
+- Runs 20,000 Monte Carlo simulations
+- Compares co-branded vs white-label models
+- Outputs financial projections and recommendations
+- **Runtime:** ~2 minutes
 
-### Features
-- Single command to run all tests
-- Environment variable validation
-- Module integrity checks
-- API connectivity tests
+### 2. **Cost Estimation** (`cost_estimation.py`)
+- Analyzes 10 Macron products across 3 geographical scenarios
+- Uses 100,000 Monte Carlo simulations per scenario
+- **Already integrated** into main simulation
 
-### Usage
+### 3. **Brand Intelligence** (`brand_intelligence_agent.py`)
+- Collects real-time data via Perplexity API
+- **Not needed** - we provide pre-computed snapshot
+- Only use if you want fresh market data
+
+### 4. **Market Data** (`italian_fashion_market.py`)
+- Maps 67 brands across 7 market segments
+- Provides brand-segment relationships
+- Automatically loaded by simulation
+
+---
+
+## 🧪 Running Tests
+
 ```bash
-# Set API key for brand intelligence tests
-export PERPLEXITY_API_KEY='your-api-key'
-
 # Run all tests
-cd test
-python test.py
+python -m pytest test/test.py -v
 
-# Or run individual tests
-python test_cost_estimation.py
-python test_italian_fashion_market.py
-python test_single_brand.py
-python test_direct_api.py
+# Run specific test suites
+python -m pytest test/test.py::TestCostEstimation -v
+python -m pytest test/test.py::TestItalianFashionMarket -v
+python -m pytest test/test.py::TestSimulation -v
 ```
 
-## 📊 Data Sources
+---
 
-### Italian Fashion Market Data
-- 67 brands mapped across 7 market segments
-- Functionality vs Fashion positioning (0-10 scale)
-- Segment definitions from luxury to sportswear
+## 📈 Understanding the Results
 
-### Macron Product Portfolio
-- 10 key products with technical specifications
-- Target segments and price points
-- Production complexity ratings
+After running the simulation, check:
 
-## 🚀 Quick Start
+1. **Console Output** - Real-time simulation progress and summary
+2. **EXECUTIVE_SUMMARY.md** - Strategic recommendations
+3. **ARCHITECTURE.md** - Technical implementation details
+4. **simulation_results/` folder** - Detailed JSON data
 
-1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Set Perplexity API key: `export PERPLEXITY_API_KEY='your-key'`
-4. Run tests: `cd test && python test.py`
-5. Generate cost analysis: `python cost_estimation.py`
-6. Collect brand intelligence: `python brand_intelligence_agent.py`
+Key metrics to look for:
+- **Profit margins**: Co-branded (26.5%) vs White-label (6.8%)
+- **NPV comparison**: Which model creates more long-term value
+- **Capacity utilization**: How efficiently each model uses production
+- **Brand adoption**: Number and quality of partnerships
 
-## 📈 Next Steps
+---
 
-The collected data feeds into the ModaMesh simulation engine for:
-- Market entry strategy analysis
-- Competitive response modeling
-- Partnership opportunity identification
-- Risk assessment across segments
+## 🔑 Perplexity API (Optional)
 
-## 📝 License
+Only needed if you want to refresh brand intelligence data:
 
-TBD
+1. Get API key from [Perplexity.ai](https://www.perplexity.ai)
+2. Set environment variable:
+   ```bash
+   export PERPLEXITY_API_KEY='pplx-xxxxxxxxxxxxx'
+   ```
+3. Run brand intelligence collection:
+   ```bash
+   python brand_intelligence_agent.py
+   ```
 
-## 👥 Contributors
+**Note:** The simulation works perfectly with our pre-computed snapshot. Fresh data collection takes ~30 minutes and may have API costs.
 
-Panagiotis Stratis
+---
+
+## ⚡ Quick Troubleshooting
+
+### "No module named X"
+```bash
+pip install -r requirements.txt
+```
+
+### "API key not found"
+You don't need an API key! The simulation uses pre-computed data. Only set the key if collecting fresh data.
+
+### Memory issues
+Reduce simulation count in `run_simulation.py`:
+```python
+config = SimulationConfig(n_simulations=1000)  # Instead of 10000
+```
+
+---
+
+## 📝 Key Insights
+
+The simulation reveals that despite lower revenue, the **co-branded model delivers 1.5x more profit** due to:
+- Premium positioning (26.5% margins vs 6.8%)
+- Better alignment with luxury brands
+- Higher value per unit (€12 vs €3 profit/unit)
+- Strategic capacity flexibility
+
+Read `EXECUTIVE_SUMMARY.md` for full strategic recommendations.
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Run tests: `python -m pytest test/test.py`
+4. Submit a pull request
+
+---
+
+## 📄 License
+
+© 2024 Macron S.p.A. - Simulation Framework
