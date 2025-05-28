@@ -155,16 +155,73 @@ class BrandAgent:
         self.decision_chain = self._create_decision_chain()
     
     def _set_appetite_for_luxury_move(self):
-        """Set appetite for high-performance luxury move based on segment"""
-        # Check if brand is in segment 6 (High-Performance Luxury)
+        """Set appetite for high-performance luxury move based on segment positioning"""
+        # Define segment fashion and function scores
+        segment_scores = {
+            1: {'fashion': 0.2, 'function': 1.0},  # Core Technical Sportswear
+            2: {'fashion': 0.4, 'function': 0.8},  # Outdoor Technical Sportswear
+            3: {'fashion': 0.6, 'function': 0.4},  # Athleisure
+            4: {'fashion': 0.4, 'function': 0.8},  # Luxury Activewear
+            5: {'fashion': 0.8, 'function': 0.4},  # Athluxury
+            6: {'fashion': 0.8, 'function': 0.8},  # High-Performance Luxury
+            7: {'fashion': 1.0, 'function': 0.2}   # Luxury Fashion
+        }
+        
+        # Calculate weighted average scores for brands in multiple segments
+        total_fashion = 0
+        total_function = 0
+        segment_count = len(self.segment_id)
+        
+        for seg_id in self.segment_id:
+            if seg_id in segment_scores:
+                total_fashion += segment_scores[seg_id]['fashion']
+                total_function += segment_scores[seg_id]['function']
+        
+        avg_fashion = total_fashion / segment_count if segment_count > 0 else 0
+        avg_function = total_function / segment_count if segment_count > 0 else 0
+        
+        # Calculate appetite based on fashion-function gap
+        # High fashion + Low function = High appetite to move to HP Luxury
+        # Low fashion + High function = Low appetite (already technical)
+        # Segment 6 brands = Zero appetite (already there)
+        
         if 6 in self.segment_id:
+            # Already in High-Performance Luxury
             self.appetite_for_high_performance_luxury_move = 0.0
-        # Check if brand is in segment 5 (Athluxury) or 7 (Luxury Fashion)
-        elif any(seg in [5, 7] for seg in self.segment_id):
-            self.appetite_for_high_performance_luxury_move = random.random()
-        # All other brands get default value
         else:
-            self.appetite_for_high_performance_luxury_move = 0.5
+            # Fashion advantage over function = desire for technical credibility
+            fashion_function_gap = avg_fashion - avg_function
+            
+            # Brands strong in fashion but weak in function have highest appetite
+            # Gap ranges from -0.8 (pure technical) to +0.8 (pure fashion)
+            # Normalize to 0-1 scale where high fashion/low function = 1
+            base_appetite = (fashion_function_gap + 0.8) / 1.6
+            
+            # Additional factors:
+            # - Innovation perception gap (low innovation perception increases appetite)
+            innovation_gap_factor = max(0, 0.7 - self.innovation_perception) / 0.7
+            
+            # - Technical capability gap (low technical capability increases appetite if fashion-forward)
+            if avg_fashion > 0.6:  # Fashion-forward brands
+                tech_gap_factor = max(0, 0.6 - self.technical_capability) / 0.6
+            else:
+                tech_gap_factor = 0  # Technical brands don't need to move
+            
+            # - Segment 5 & 7 bonus (explicitly mentioned in requirements)
+            segment_bonus = 0.2 if any(seg in [5, 7] for seg in self.segment_id) else 0
+            
+            # Combine factors with weights
+            self.appetite_for_high_performance_luxury_move = min(1.0, 
+                base_appetite * 0.5 +
+                innovation_gap_factor * 0.2 +
+                tech_gap_factor * 0.2 +
+                segment_bonus
+            )
+            
+            # Add small random variation for realism
+            self.appetite_for_high_performance_luxury_move = max(0, min(1.0,
+                self.appetite_for_high_performance_luxury_move + random.uniform(-0.1, 0.1)
+            ))
     
     def _load_segment_information(self):
         """Load segment information from Italian Fashion Market"""

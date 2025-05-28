@@ -216,6 +216,30 @@ class BrandAgent:
        luxury_pressure = random.uniform(0.3, 0.7)
    ```
 
+### Brand Agent Architecture
+
+Each Italian fashion brand is represented by a `BrandAgent` with:
+
+#### Static Attributes (from Brand Intelligence)
+- Financial metrics (revenue, margins, growth)
+- Market position (segments, pricing, market share)
+- Innovation profile (R&D, patents, technical capability)
+- Brand metrics (heritage, perception, brand heat)
+- Operational capabilities (flexibility, manufacturing, supply chain)
+
+#### Dynamic Attributes
+- **risk_appetite**: Random 0-1 (willingness to take risks)
+- **decision_speed**: Random 0-1 (how quickly they make decisions)
+- **appetite_for_high_performance_luxury_move**: Calculated based on fashion vs function positioning
+  - Brands in segment 6 (HP Luxury): 0.0 (already there)
+  - High fashion + low function brands (segments 5, 7): 0.6-0.9 (highest appetite)
+  - High function + low fashion brands (segments 1, 2): 0.0-0.2 (low appetite)
+  - Calculation considers:
+    - Fashion-function gap (high fashion but low function = high appetite)
+    - Innovation perception gap (low perception increases appetite)
+    - Technical capability gap (low capability increases appetite for fashion brands)
+    - Segment 5 & 7 bonus for explicit luxury positioning
+
 ---
 
 ## DECISION-MAKING ALGORITHMS
