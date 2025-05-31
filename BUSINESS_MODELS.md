@@ -20,13 +20,6 @@ A strategic partnership where Macron's technical components are integrated into 
 - **Marketing:** Joint storytelling about innovation and technical performance
 - **Exclusivity:** Limited partnerships per product category to maintain premium positioning
 
-### Key Characteristics
-- **Pricing Structure:** Premium pricing (€125.7/unit average)
-- **Margins:** High profit margins (26.6%)
-- **Volume:** Lower volumes per partnership (avg. 10,000-25,000 units/year)
-- **Partners:** 15-25 selective partnerships
-- **Target Segments:** Luxury Fashion, High-Performance Luxury, Athluxury brands
-
 ### Value Proposition for Partner Brands
 1. **Innovation Credibility:** Association with Macron's technical expertise
 2. **Marketing Story:** "Powered by" creates compelling product narratives
@@ -60,13 +53,6 @@ A supply chain partnership where Macron manufactures technical components that a
 - **Integration:** Components delivered to brand specifications
 - **Marketing:** Partner brands claim innovation as their own
 - **Volume:** High-volume orders to achieve economies of scale
-
-### Key Characteristics
-- **Pricing Structure:** Competitive pricing (€99.1/unit average)
-- **Margins:** Low profit margins (7.1%)
-- **Volume:** Higher volumes per partnership (avg. 40,000-100,000 units/year)
-- **Partners:** 40-50 volume-oriented partnerships
-- **Target Segments:** Core Technical, Outdoor Technical, mass-market Athleisure
 
 ### Value Proposition for Partner Brands
 1. **Cost Efficiency:** Lower component costs than developing in-house
