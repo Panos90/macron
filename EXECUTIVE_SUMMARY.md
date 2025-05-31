@@ -19,22 +19,32 @@ The analysis simulated 66 Italian fashion brands across 7 market segments, evalu
 ## KEY FINANCIAL OUTCOMES
 
 ### Co-Branded Model Performance
-- **5-Year Revenue:** €40.3M (mean)
-- **5-Year Profit:** €10.7M (mean)
-- **NPV of Profit:** €8.8M
-- **Profit Margin:** 26.5%
-- **R&D Coverage:** 185% of €5.77M investment
-- **Average Partnerships:** 18 brands
-- **Capacity Utilization:** 6.3%
+- **5-Year Revenue:** €30.8M (mean)
+- **5-Year Profit:** €8.2M (mean)
+- **NPV of Profit:** €6.7M
+- **Profit Margin:** 26.6%
+- **R&D Coverage:** 142% of €5.77M investment
+- **Average Partnerships:** 23 brands
+- **Capacity Utilization:** 4.9%
+- **Total Units:** 245,000 (over 5 years)
+- **Average Selling Price:** €125.7/unit
+- **Average Cost:** €33.2/unit
+- **Average Profit/Unit:** €33.5/unit
 
 ### White-Label Model Performance
-- **5-Year Revenue:** €105.0M (mean)
-- **5-Year Profit:** €7.1M (mean)
-- **NPV of Profit:** €5.8M
-- **Profit Margin:** 6.8%
-- **R&D Coverage:** 123% of €5.77M investment
-- **Average Partnerships:** 39 brands
-- **Capacity Utilization:** 21.2%
+- **5-Year Revenue:** €93.2M (mean)
+- **5-Year Profit:** €6.6M (mean)
+- **NPV of Profit:** €5.4M
+- **Profit Margin:** 7.1%
+- **R&D Coverage:** 115% of €5.77M investment
+- **Average Partnerships:** 42 brands
+- **Capacity Utilization:** 18.8%
+- **Total Units:** 940,000 (over 5 years)
+- **Average Selling Price:** €99.1/unit
+- **Average Cost:** €33.2/unit
+- **Average Profit/Unit:** €7.0/unit
+
+*Based on average production cost of €33.2/unit from Asian manufacturing
 
 ---
 
@@ -42,9 +52,9 @@ The analysis simulated 66 Italian fashion brands across 7 market segments, evalu
 
 ### 1. **Profit Quality Over Revenue Quantity**
 The co-branded model's premium positioning enables Macron to capture significantly more value per unit:
-- **Co-Branded:** €12/unit profit margin
-- **White-Label:** €3/unit profit margin
-- This 4x difference in unit economics fundamentally drives the superior profitability despite lower volumes
+- **Co-Branded:** €33.5/unit profit margin
+- **White-Label:** €7.0/unit profit margin
+- This 4.8x difference in unit economics fundamentally drives the superior profitability despite lower volumes
 
 ### 2. **Brand Partnership Dynamics**
 The simulation reveals distinct adoption patterns:
@@ -53,11 +63,11 @@ The simulation reveals distinct adoption patterns:
 - **Price-sensitive brands** gravitate toward white-label for cost optimization
 
 ### 3. **Capacity Utilization Paradox**
-- Co-branded's low utilization (6.3%) is actually a **strategic advantage**:
+- Co-branded's low utilization (4.9%) is actually a **strategic advantage**:
   - Allows selective, high-margin partnerships
   - Maintains exclusivity and premium positioning
-  - Provides 94% headroom for future growth
-- White-label's higher utilization (21.2%) creates volume but erodes margins
+  - Provides 95% headroom for future growth
+- White-label's higher utilization (18.8%) creates volume but erodes margins
 
 ### 4. **Product-Market Fit Analysis**
 Top-performing technical components by adoption rate:
@@ -168,7 +178,7 @@ The ModaMesh simulation definitively demonstrates that Macron's optimal path for
 
 The key insight is that in the technical component B2B market, **profitability comes from partnership quality, not quantity**. By focusing on 15-20 high-value co-branded relationships rather than 40+ commoditized white-label contracts, Macron can build a sustainable, high-margin business that funds continued innovation.
 
-The 94% unused capacity should not be viewed as inefficiency but as **optionality** - the ability to be selective, maintain premium positioning, and grow strategically over time.
+The 95% unused capacity should not be viewed as inefficiency but as **optionality** - the ability to be selective, maintain premium positioning, and grow strategically over time.
 
 **Final Recommendation:** Proceed with co-branded model implementation, targeting an initial portfolio of 5-7 flagship luxury partnerships in Q1 2025, with the goal of reaching €2M annual profit run rate by year-end.
 
