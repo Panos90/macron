@@ -83,6 +83,11 @@ Top-performing technical components by adoption rate:
 - **Confidence Intervals (5%-95%):**
   - Co-Branded Profit: €6.5M - €15.6M
   - White-Label Profit: €4.9M - €9.6M
+- **Brand Equity Upside (Co-Branded Only):**
+  - "Powered by Macron" visibility on luxury products creates aspirational brand associations
+  - After 5 years of partnerships with brands like Gucci, Prada, and Moncler, Macron can establish itself in the "High-Performance Luxury" segment
+  - This brand elevation creates value beyond immediate financial returns - positioning Macron for future premium opportunities
+  - White-label offers no brand recognition benefit as Macron remains invisible to end consumers
 
 ---
 
