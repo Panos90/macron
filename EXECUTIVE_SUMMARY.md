@@ -102,12 +102,17 @@ Top-performing technical components by adoption rate:
 2. **Brand Prioritization**
    - **Tier 1 Targets:** Gucci, Moncler, Prada, Stone Island
    - **Tier 2 Targets:** Arc'teryx Veilance, Y-3, Brunello Cucinelli
-   - **Tier 3 Targets:** Technical luxury crossovers
+   - **Tier 3 Targets:** Peak Performance, Goldwin, Bogner, Descente Allterrain (Technical luxury crossovers with innovation appetite)
 
 3. **Product Portfolio Optimization**
    - Lead with sustainability innovations (recycled/bio-based)
    - Bundle complementary technologies
    - Create exclusive colorways/specifications per partner
+
+4. **Intellectual Property Protection**
+   - File patents for existing technical innovations immediately
+   - Establish IP ownership framework for future co-developments
+   - Secure trademarks for "Powered by Macron" in key markets
 
 ### Medium-Term Strategy (6-18 months)
 1. **Innovation Showcase Development**
@@ -115,15 +120,17 @@ Top-performing technical components by adoption rate:
    - Create digital twin demonstrations
    - Develop co-creation workshops
 
-2. **Selective Market Expansion**
-   - Add 10-15 partnerships per year
-   - Maintain margin discipline (>25%)
-   - Geographic expansion to French/German luxury
+2. **Strategic Market Expansion**
+   - **Priority:** US market entry - tap into the world's largest luxury sportswear market
+   - Target American luxury activewear brands (Outdoor Voices, Vuori premium lines)
+   - Establish presence at US trade shows (Outdoor Retailer, Performance Days USA)
+   - **Secondary:** Northern European markets known for technical innovation
 
-3. **R&D Investment Allocation**
+3. **R&D Investment & IP Strategy**
    - Reinvest 30% of profits into next-gen innovations
    - Focus on luxury-relevant technologies
-   - Patent protection for co-developed solutions
+   - Co-develop and co-patent innovations with key partners
+   - Build defensive patent portfolio around core technologies
 
 ### Long-Term Vision (18+ months)
 1. **Platform Evolution**
@@ -136,10 +143,12 @@ Top-performing technical components by adoption rate:
    - Maintain pricing power through scarcity
    - Consider dedicated production lines for top partners
 
-3. **Value Chain Integration**
+3. **Value Chain Integration & IP Leadership**
    - Explore equity partnerships with key brands
    - Develop exclusive material supplier relationships
    - Build circular economy capabilities
+   - Establish Macron as IP leader in technical fashion components
+   - License select technologies to non-competing markets
 
 ---
 
