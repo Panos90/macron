@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-MACRON AGENT MODULE
-===================
-Special LangChain-based agent representing Macron in the ModaMesh simulation.
+Macron Agent Module for ModaMesh™
+Special LangChain-based agent representing Macron in the ModaMesh™ simulation.
 This agent has unique capabilities for managing partnerships and pricing strategies.
 """
 

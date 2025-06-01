@@ -1,4 +1,4 @@
-# ModaMesh: AI-Powered Market Intelligence
+# ModaMesh™: AI-Powered Market Intelligence
 
 ## What We Built
 

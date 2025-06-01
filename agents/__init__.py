@@ -1,5 +1,5 @@
 """
-ModaMesh Agent Framework
+ModaMesh™ Agent Framework
 ========================
 Multi-agent simulation system for Italian fashion market analysis.
 """

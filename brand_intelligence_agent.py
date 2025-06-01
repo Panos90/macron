@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-BRAND INTELLIGENCE AGENT MODULE
-==============================
-Phase 3 of ModaMesh: Direct Perplexity API integration for gathering comprehensive 
+BRAND INTELLIGENCE COLLECTOR
+Phase 3 of ModaMesh™: Direct Perplexity API integration for gathering comprehensive 
 brand intelligence using Perplexity Sonar Pro API for deep market research.
 
 This module creates one agent per Italian fashion brand and collects detailed

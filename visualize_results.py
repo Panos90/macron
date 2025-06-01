@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Visualization script for ModaMesh simulation results
-Generates comprehensive charts and saves them to simulation_results directory
+Visualization script for ModaMesh™ simulation results
+Creates comprehensive visualizations of simulation outcomes including financial metrics,
+partnership dynamics, and strategic insights.
 """
 
 import json

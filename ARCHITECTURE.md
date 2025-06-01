@@ -20,7 +20,7 @@
 
 ## SYSTEM OVERVIEW
 
-ModaMesh is a multi-agent simulation system that models the Italian fashion market's response to Macron's B2B technical component offerings. The system consists of three core engines:
+ModaMesh™ is a multi-agent simulation system that models the Italian fashion market's response to Macron's B2B technical component offerings. The system consists of three core engines:
 
 ```
 ┌─────────────────────┐     ┌──────────────────────┐     ┌────────────────────┐
@@ -575,4 +575,4 @@ def allocate_capacity(year, partnerships, model_type):
 
 ---
 
-*This architecture document represents the complete technical implementation of the ModaMesh simulation system. All assumptions and methodologies have been designed to balance realism with computational tractability while maintaining decision-relevant accuracy.* 
+*This architecture document represents the complete technical implementation of the ModaMesh™ simulation system. All assumptions and methodologies have been designed to balance realism with computational tractability while maintaining decision-relevant accuracy.* 

@@ -2281,7 +2281,7 @@ def main():
     print(f"\n✅ ANALYSIS COMPLETE!")
     print(f"📊 All 10 products analyzed across 3 geographical scenarios")
     print(f"📈 Visualization plots generated")
-    print(f"🎯 Ready for ModaMesh Phase 2 integration")
+    print(f"🎯 Ready for ModaMesh™ Phase 2 integration")
 
 if __name__ == "__main__":
     main() 

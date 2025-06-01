@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Comprehensive test suite for ModaMesh project
+Comprehensive test suite for ModaMesh™ project
 Tests all core components without modifying the actual codebase
 """
 

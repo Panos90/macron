@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-MARKET STATE MANAGER MODULE
-===========================
-Manages and evolves market conditions over time in the ModaMesh simulation.
+Market State Manager for ModaMesh™ Simulation
+Manages and evolves market conditions over time in the ModaMesh™ simulation.
 Tracks consumer preferences, segment dynamics, and market indicators.
 """
 

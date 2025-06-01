@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-ITALIAN FASHION MARKET ANALYSIS MODULE
-=====================================
+ITALIAN FASHION MARKET SEGMENTS ANALYSIS
+========================================
+Phase 2 of ModaMesh™: Market Intelligence Foundation
+
 Comprehensive analysis module for Italian fashion market segments and brands.
 Provides endpoints for brand-segment relationships and market intelligence.
 

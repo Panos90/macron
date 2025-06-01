@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-BRAND AGENT MODULE
-==================
-LangChain-based agents representing Italian fashion brands in the ModaMesh simulation.
+Brand Agent Module for ModaMesh™
+LangChain-based agents representing Italian fashion brands in the ModaMesh™ simulation.
 Each agent has decision-making capabilities based on brand intelligence data.
 """
 

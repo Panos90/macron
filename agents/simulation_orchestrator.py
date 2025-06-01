@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-SIMULATION ORCHESTRATOR MODULE
-==============================
-Central orchestration for the ModaMesh multi-agent simulation.
+Simulation Orchestrator for ModaMesh™
+Central orchestration for the ModaMesh™ multi-agent simulation.
 Manages agent initialization, market dynamics, and simulation execution.
 """
 
@@ -69,7 +68,7 @@ class MarketState:
 
 class SimulationOrchestrator:
     """
-    Main orchestrator for the ModaMesh simulation
+    Main orchestrator for the ModaMesh™ simulation
     """
     
     def __init__(self, config: SimulationConfig = None):
@@ -101,7 +100,7 @@ class SimulationOrchestrator:
     
     def initialize_simulation(self) -> None:
         """Initialize all agents and market state"""
-        logger.info("🎬 Initializing ModaMesh Simulation...")
+        logger.info("🎬 Initializing ModaMesh™ Simulation...")
         
         # Load all brand agents
         self.brand_agents = load_all_brand_agents()

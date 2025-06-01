@@ -1,6 +1,6 @@
-# ModaMesh Test Suite
+# ModaMesh™ Test Suite
 
-This directory contains comprehensive tests for the ModaMesh project, testing all core components without modifying the actual codebase.
+This directory contains comprehensive tests for the ModaMesh™ project, testing all core components without modifying the actual codebase.
 
 ## Test Coverage
 

@@ -1,6 +1,6 @@
-# ModaMesh - Multi-Agent Fashion Market Simulation
+# ModaMesh™ - Multi-Agent Fashion Market Simulation
 
-ModaMesh simulates how Italian fashion brands would respond to Macron's B2B technical component business models (co-branded vs white-label).
+ModaMesh™ simulates how Italian fashion brands would respond to Macron's B2B technical component business models (co-branded vs white-label).
 
 ## 🚀 Quick Start
 
