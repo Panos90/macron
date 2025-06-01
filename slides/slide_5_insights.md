@@ -3,7 +3,7 @@
 ## Who Wants What?
 
 ### 🏆 **Luxury Brands Love Co-Branded**
-**Gucci** | **Prada** | **Moncler**
+**Gucci** | **Prada** | **Bottega Veneta**
 *"Innovation visibility enhances our story"*
 
 ### 📦 **Volume Brands Choose White-Label**
