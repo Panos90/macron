@@ -4,16 +4,24 @@
 
 ### Co-Branded "Powered by Macron"
 ```
-Revenue: €30.8M
-Profit:  €8.2M  ⭐
-Margin:  26.6%
+Revenue:    €30.8M
+Profit:     €8.2M  ⭐
+NPV:        €6.7M
+Margin:     26.6%
+
+R&D Coverage: 142%
+Capacity Used: 4.9%
 ```
 
 ### White-Label Manufacturing
 ```
-Revenue: €93.2M
-Profit:  €6.6M
-Margin:  7.1%
+Revenue:    €93.2M
+Profit:     €6.6M
+NPV:        €5.4M
+Margin:     7.1%
+
+R&D Coverage: 115%
+Capacity Used: 18.8%
 ```
 
 ---

@@ -1,4 +1,4 @@
-# €5.77M Innovation Portfolio
+# Invest in Innovation
 
 ## Three Pillars of Technical Excellence
 
@@ -21,9 +21,3 @@
 - Zero-waste magnetic closures
 
 ---
-
-## The Opportunity
-
-> **Transform invisible excellence into visible luxury partnerships**
-
-**Target:** 5-7 flagship co-branded partnerships by Q1 2025 
