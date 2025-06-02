@@ -59,18 +59,94 @@ macron/
 ├── cost_estimation.py           # Monte Carlo cost analysis
 ├── italian_fashion_market.py    # Market segmentation data
 ├── brand_intelligence_agent.py  # Perplexity API integration
+├── visualize_results.py         # Results visualization tools
+│
 ├── agents/                      # Simulation agents
+│   ├── __init__.py             # Package initialization
 │   ├── brand_agent.py          # Individual brand decision-making
-│   └── macron_agent.py         # Macron's capacity management
+│   ├── macron_agent.py         # Macron's capacity management
+│   ├── market_state_manager.py # Market dynamics & evolution
+│   └── simulation_orchestrator.py # Simulation coordination
+│
 ├── data/                        # Input data
 │   ├── macron_products.json    # 10 technical products
 │   └── italian_fashion_market.json  # 67 brands, 7 segments
+│
 ├── company_data/                # 📌 PRE-COMPUTED brand intelligence
 │   └── *.json                  # Individual brand profiles
+│
 ├── simulation_results/          # Output from simulations
-└── test/                        # Test suite
-    └── test.py                 # Run all tests
+│   └── simulation_*.json       # Detailed results per run
+│
+├── product_costs/               # Cost analysis outputs
+│   └── analysis_*.json         # Monte Carlo cost estimates
+│
+├── test/                        # Test suite
+│   ├── test.py                 # Main test file
+│   └── README.md               # Test documentation
+│
+├── slides/                      # Presentation materials
+│
+└── 📚 Documentation Files:
+    ├── README.md               # This file - Getting started guide
+    ├── EXECUTIVE_SUMMARY.md    # Strategic recommendations & results
+    ├── ARCHITECTURE.md         # Technical implementation details
+    ├── ASSUMPTIONS.md          # All simulation assumptions documented
+    ├── BUSINESS_MODELS.md      # Co-branded vs White-label definitions
+    ├── MARKETING_MIX.md        # 4Ps analysis for both models
+    ├── PORTER.md               # Porter's 5 Forces analysis
+    ├── VALUE_CHAIN.md          # Value chain analysis
+    └── SWOT.md                 # SWOT analysis for Macron
 ```
+
+---
+
+## 📚 Documentation Guide
+
+### Core Documentation
+
+1. **EXECUTIVE_SUMMARY.md** - Start here for strategic insights
+   - Simulation results summary
+   - Key findings and recommendations
+   - Financial projections comparison
+
+2. **ARCHITECTURE.md** - Technical deep dive
+   - System design and algorithms
+   - Agent behavior models
+   - Monte Carlo methodology
+
+3. **ASSUMPTIONS.md** - All simulation assumptions
+   - Financial & economic assumptions
+   - Market behavior assumptions
+   - Production & capacity constraints
+   - Cost modeling distributions
+
+### Strategic Analysis Documents
+
+4. **BUSINESS_MODELS.md** - Partnership model definitions
+   - Co-branded "Powered by Macron" model
+   - White-label private manufacturing model
+   - Value propositions for each
+
+5. **MARKETING_MIX.md** - 4Ps analysis
+   - Product, Price, Place, Promotion strategies
+   - Comparison between both models
+   - Market positioning approach
+
+6. **PORTER.md** - Industry analysis
+   - Five Forces framework applied
+   - Competitive dynamics assessment
+   - Strategic positioning insights
+
+7. **VALUE_CHAIN.md** - Value creation analysis
+   - Primary and support activities
+   - Value capture mechanisms
+   - Partnership synergies
+
+8. **SWOT.md** - Strategic position assessment
+   - Strengths & Weaknesses (internal)
+   - Opportunities & Threats (external)
+   - Strategic implications
 
 ---
 
@@ -83,6 +159,9 @@ python run_simulation.py
 
 # 2. View results
 cat EXECUTIVE_SUMMARY.md
+
+# 3. Visualize results (optional)
+python visualize_results.py
 ```
 
 ### Option B: Fresh Data Collection (Requires API Key)
@@ -98,6 +177,9 @@ python cost_estimation.py
 
 # 4. Run main simulation
 python run_simulation.py
+
+# 5. Generate visualizations
+python visualize_results.py
 ```
 
 ---
@@ -105,25 +187,40 @@ python run_simulation.py
 ## 🔧 Key Modules Explained
 
 ### 1. **Main Simulation** (`run_simulation.py`)
-- Runs 20,000 Monte Carlo simulations
-- Compares co-branded vs white-label models
-- Outputs financial projections and recommendations
-- **Runtime:** ~2 minutes
+- Runs 20,000 Monte Carlo simulations (10,000 per model)
+- Simulates 5-year partnership lifecycle
+- Models 67 Italian fashion brands' decisions
+- Includes market shocks and dynamics
+- **Runtime:** ~2-3 minutes
 
 ### 2. **Cost Estimation** (`cost_estimation.py`)
 - Analyzes 10 Macron products across 3 geographical scenarios
 - Uses 100,000 Monte Carlo simulations per scenario
+- Models cost distributions (log-normal, beta, triangular, etc.)
 - **Already integrated** into main simulation
 
 ### 3. **Brand Intelligence** (`brand_intelligence_agent.py`)
 - Collects real-time data via Perplexity API
 - **Not needed** - we provide pre-computed snapshot
+- Gathers 40+ metrics per brand
 - Only use if you want fresh market data
 
 ### 4. **Market Data** (`italian_fashion_market.py`)
 - Maps 67 brands across 7 market segments
 - Provides brand-segment relationships
+- Fashion vs. Function scoring (1-10 scale)
 - Automatically loaded by simulation
+
+### 5. **Visualization** (`visualize_results.py`)
+- Creates charts and graphs from simulation results
+- Profit comparisons, capacity utilization, brand adoption
+- Exports publication-ready figures
+
+### 6. **Agent System** (`agents/`)
+- **brand_agent.py**: Individual brand decision logic
+- **macron_agent.py**: Macron's pricing and capacity optimization
+- **market_state_manager.py**: Market evolution and shocks
+- **simulation_orchestrator.py**: Coordinates all agents
 
 ---
 
@@ -147,14 +244,15 @@ After running the simulation, check:
 
 1. **Console Output** - Real-time simulation progress and summary
 2. **EXECUTIVE_SUMMARY.md** - Strategic recommendations
-3. **ARCHITECTURE.md** - Technical implementation details
-4. **simulation_results/` folder** - Detailed JSON data
+3. **simulation_results/` folder** - Detailed JSON data
+4. **Visualization outputs** - Charts and graphs (if generated)
 
 Key metrics to look for:
 - **Profit margins**: Co-branded (26.5%) vs White-label (6.8%)
 - **NPV comparison**: Which model creates more long-term value
 - **Capacity utilization**: How efficiently each model uses production
 - **Brand adoption**: Number and quality of partnerships
+- **Market evolution**: How preferences shift over 5 years
 
 ---
 
@@ -190,6 +288,13 @@ You don't need an API key! The simulation uses pre-computed data. Only set the k
 Reduce simulation count in `run_simulation.py`:
 ```python
 config = SimulationConfig(n_simulations=1000)  # Instead of 10000
+```
+
+### Results not updating
+Delete old results and re-run:
+```bash
+rm -rf simulation_results/*
+python run_simulation.py
 ```
 
 ---
